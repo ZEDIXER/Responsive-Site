@@ -1,67 +1,95 @@
 <!DOCTYPE html>
-
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>سبد خرید</title>
-    <link href="./font.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./font.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/vazir-font@24.1.0/dist/font-face.css"
       rel="stylesheet"
     />
   </head>
   <body class="overflow-x-hidden">
-    <header class="flex h-18 mt-0 w-screen">
-      <div class="flex items-center w-1/2 pt-5 pl-8">
-        <button class="cursor-pointer block w-full md:w-auto text-center">
+    <header class="flex h-18 mt-0 w-full px-2 md:px-0">
+      <div class="flex items-center w-1/2 pt-5 pl-2 md:pl-8">
+        <button
+          class="cursor-pointer"
+          onclick="window.location.href='shopping cart.html'"
+        >
           <img
             alt="No Connection"
-            class="ml-5 w-8 h-8 w-full h-auto"
+            class="ml-2 md:ml-5 w-6 h-6 md:w-8 md:h-8"
             src="./img/Sopping Cart.png"
           />
         </button>
         <div
-          class="flex border-1 border-pink-500 ml-5 rounded-md h-10 justify-center"
+          class="flex border-1 border-pink-500 ml-2 md:ml-5 rounded-md h-8 md:h-10 justify-center"
         >
           <button
-            class="flex items-center cursor-pointer w-35 justify-center block w-full md:w-auto text-center"
+            class="flex items-center cursor-pointer w-auto md:w-35 justify-center px-2 md:px-0"
             onclick="window.location.href='login.html'"
           >
-            <p class="font-bold pr-2 text-pink-500 text-sm md:text-base">
+            <p class="font-bold pr-2 text-pink-500 text-xs md:text-base">
               ورود
             </p>
             <img
               alt="No Connection"
-              class="w-full h-auto"
+              class="w-4 h-4 md:w-6 md:h-6"
               src="./img/Login Icon.png"
             />
           </button>
         </div>
       </div>
-      <div class="flex items-center w-1/2">
+
+      <div class="flex items-center w-1/2 justify-end pt-5 pr-2 md:pr-8">
         <input
-          class="flex-1 border-1 pr-8 border-gray-300 rounded-sm h-10 items-center mt-5 text-right bg-no-repeat bg-right placeholder-gray-400"
+          class="hidden xl:flex border-1 cursor-pointer pr-8 border-gray-300 rounded-sm h-10 items-center text-right bg-no-repeat bg-right placeholder-gray-400 w-64 mr-4"
           placeholder="جست و جو"
-          style="background-image: url('./img/Search\ Icon.png')"
+          style="
+            background-image: url('./img/Search Icon.png');
+            background-size: 20px;
+          "
           type="text"
         />
+
+        <button class="xl:hidden p-2 mr-4">
+          <img alt="Search" class="w-6 h-6" src="./img/Search Icon.png" />
+        </button>
+
+        <button class="xl:hidden text-black p-2 rounded mr-4 cursor-pointer">
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+
         <button
-          class="cursor-pointer block w-full md:w-auto text-center"
+          class="cursor-pointer"
           onclick="window.location.href='main.html'"
         >
           <img
             alt="No Connection"
-            class="pt-5 pr-18 w-45 h-45 w-full h-auto"
+            class="w-16 h-16 md:w-25 lg:w-30 xl:w-35"
             src="./img/Khanomi Logo.svg"
           />
         </button>
       </div>
     </header>
-    <nav class="mt-5">
+
+    <nav class="mt-5 hidden xl:block">
       <div
-        class="flex h-12 bg-black w-screen text-white justify-evenly font-bold"
+        class="flex h-12 bg-black w-full text-white justify-evenly font-bold"
       >
         <button
           class="hover:text-pink-500 cursor-pointer block w-full md:w-auto text-center"
@@ -116,18 +144,12 @@
     </nav>
     <section class="flex items-center justify-center h-80">
       <div class="flex flex-col w-100 h-110 mt-25 rounded-sm items-center pt-5">
-        <img
-          alt="No Connection"
-          class="w-full h-auto"
-          src="./img/Shopping Bag Screenshot.png"
-        />
-        <p class="mt-10 text-gray-400 text-sm md:text-base">
-          !سبد خرید شما خالی است
-        </p>
+        <img src="./img/Shopping Bag Screenshot.png" alt="No Connection" />
+        <p class="mt-10 text-gray-400">!سبد خرید شما خالی است</p>
         <div class="mt-5 w-full px-5">
           <button
-            class="h-10 w-full text-pink-500 font-bold rounded-md hover:bg-gray-200 cursor-pointer border border-pink-500 block w-full md:w-auto text-center"
             onclick="window.location.href='main.html'"
+            class="h-10 w-full text-pink-500 font-bold rounded-md hover:bg-gray-200 cursor-pointer border border-pink-500"
           >
             خانه
           </button>
