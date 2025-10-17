@@ -12,396 +12,450 @@
     />
   </head>
   <body class="overflow-x-hidden">
-    <button class="w-screen">
-      <img src="./img/First Buy Copy.jpeg" alt="No Connection" />
-    </button>
+    <div class="w-full">
+      <button class="w-full block md:w-auto text-center">
+        <img
+          alt="No Connection"
+          class="w-full h-auto"
+          src="./img/First Buy Copy.jpeg"
+        />
+      </button>
 
-    <header class="flex h-18 mt-0 w-screen">
-      <div class="flex items-center w-1/2 pt-5 pl-8">
-        <button
-          onclick="window.location.href='shopping cart.html'"
-          class="cursor-pointer"
-        >
-          <img
-            class="ml-5 w-8 h-8"
-            src="./img/Sopping Cart.png"
-            alt="No Connection"
-          />
-        </button>
-        <div
-          class="flex border-1 border-pink-500 ml-5 rounded-md h-10 justify-center"
-        >
+      <header class="flex h-18 mt-0 w-full px-2 md:px-0">
+        <div class="flex items-center w-1/2 pt-5 pl-2 md:pl-8">
           <button
-            onclick="window.location.href='login.html'"
-            class="flex items-center cursor-pointer w-35 justify-center"
+            class="cursor-pointer"
+            onclick="window.location.href='shopping cart.html'"
           >
-            <p class="font-bold pr-2 text-pink-500">ورود</p>
-            <img src="./img/Login Icon.png" alt="No Connection" />
+            <img
+              alt="No Connection"
+              class="ml-2 md:ml-5 w-6 h-6 md:w-8 md:h-8"
+              src="./img/Sopping Cart.png"
+            />
+          </button>
+          <div
+            class="flex border-1 border-pink-500 ml-2 md:ml-5 rounded-md h-8 md:h-10 justify-center"
+          >
+            <button
+              class="flex items-center cursor-pointer w-auto md:w-35 justify-center px-2 md:px-0"
+              onclick="window.location.href='login.html'"
+            >
+              <p class="font-bold pr-2 text-pink-500 text-xs md:text-base">
+                ورود
+              </p>
+              <img
+                alt="No Connection"
+                class="w-4 h-4 md:w-6 md:h-6"
+                src="./img/Login Icon.png"
+              />
+            </button>
+          </div>
+        </div>
+
+        <div class="flex items-center w-1/2 justify-end pt-5 pr-2 md:pr-8">
+          <input
+            class="hidden xl:flex border-1 cursor-pointer pr-8 border-gray-300 rounded-sm h-10 items-center text-right bg-no-repeat bg-right placeholder-gray-400 w-64 mr-4"
+            placeholder="جست و جو"
+            style="
+              background-image: url('./img/Search Icon.png');
+              background-size: 20px;
+            "
+            type="text"
+          />
+
+          <button class="xl:hidden p-2 mr-4">
+            <img alt="Search" class="w-6 h-6" src="./img/Search Icon.png" />
+          </button>
+
+          <button class="xl:hidden text-black p-2 rounded mr-4 cursor-pointer">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+
+          <button
+            class="cursor-pointer"
+            onclick="window.location.href='main.html'"
+          >
+            <img
+              alt="No Connection"
+              class="w-16 h-16 md:w-25 lg:w-30 xl:w-35"
+              src="./img/Khanomi Logo.svg"
+            />
           </button>
         </div>
-      </div>
-      <div class="flex items-center w-1/2">
-        <input
-          type="text"
-          style="background-image: url('./img/Search\ Icon.png')"
-          placeholder="جست و جو"
-          class="flex-1 border-1 pr-8 border-gray-300 rounded-sm h-10 items-center mt-5 text-right bg-no-repeat bg-right placeholder-gray-400"
-        />
-        <button
-          onclick="window.location.href='main.html'"
-          class="cursor-pointer pl-5"
-        >
-          <img
-            class="pt-5 pr-18 w-45 h-45"
-            src="./img/Khanomi Logo.svg"
-            alt="No Connection"
-          />
-        </button>
-      </div>
-    </header>
+      </header>
 
-    <nav class="mt-5">
-      <div
-        class="flex h-12 bg-black w-screen text-white justify-evenly font-bold"
-      >
-        <button class="hover:text-pink-500 cursor-pointer">مجله خانومی</button
-        ><button class="hover:text-pink-500 cursor-pointer">طلا و نقره</button
-        ><button class="hover:text-pink-500 cursor-pointer">
-          کالای دیجیتال</button
-        ><button class="hover:text-pink-500 cursor-pointer">مد و پوشاک</button
-        ><button class="hover:text-pink-500 cursor-pointer">
-          مکمل غذایی و ورزشی</button
-        ><button class="hover:text-pink-500 cursor-pointer">لوازم برقی</button
-        ><button class="hover:text-pink-500 cursor-pointer">عطر و اسپری</button
-        ><button class="hover:text-pink-500 cursor-pointer">بهداشت شخصی</button
-        ><button class="hover:text-pink-500 cursor-pointer">
-          مراقب و زیبایی مو</button
-        ><button class="hover:text-pink-500 cursor-pointer">مراقب پوست</button
-        ><button class="hover:text-pink-500 cursor-pointer">آرایشی</button
-        ><button class="hover:text-pink-500 cursor-pointer">برندها</button>
-      </div>
-    </nav>
-    <section class="w-screen flex flex-col items-center justify-center mt-10">
-      <button class="w-auto flex cursor-pointer">
-        <img class="h-90 w-auto" src="./img/Rozh.jpeg" alt="No Connection" />
-      </button>
-      <button class="w-auto flex cursor-pointer mt-10">
-        <img class="h-60 w-auto" src="./img/Takhfif.jpeg" alt="No Connection" />
-      </button>
-      <div class="flex justify-center mt-10">
-        <video class="w-110 h-auto rounded-sm shadow-lg" controls>
-          <source src="./Video/Makeup Video.mp4" type="video/mp4" />
-          مرورگر شما از ویدیو پشتیبانی نمی‌کند.
-        </video>
-      </div>
-      <div class="w-full flex justify-end mt-15 mr-60 ml-20">
-        <button
-          class="relative border border-gray-200 rounded-md h-70 flex items-end w-50 flex-col hover:bg-gray-200 cursor-pointer mr-1 ml-1"
-        >
-          <img
-            class="rounded-md w-50"
-            src="./img/Adlita Photo.jpg"
-            alt="No Connection"
-          />
-          <h1 class="mt-0 font-thin">پنکک</h1>
-          <p
-            class="bottom-0 left-0 absolute text-black font-bold flex flex-row-reverse items-center gap-1"
-          >
-            <span>۴۰۰,۰۰۰</span>
-            <span>تومان</span>
-          </p>
-        </button>
-        <button
-          class="relative border border-gray-200 rounded-md h-70 flex items-end w-50 flex-col hover:bg-gray-200 cursor-pointer mr-1 ml-1"
-        >
-          <img
-            class="rounded-md w-50"
-            src="./img/Vanora Photo.jpg"
-            alt="No Connection"
-          />
-          <h1 class="mt-0 font-thin">Select پالت رژ لب</h1>
-          <p
-            class="bottom-0 left-0 absolute text-black font-bold flex flex-row-reverse items-center gap-1"
-          >
-            <span>۵۹۹,۰۰۰</span>
-            <span>تومان</span>
-          </p>
-        </button>
-        <button
-          class="relative border border-gray-200 rounded-md h-70 flex items-end w-50 flex-col hover:bg-gray-200 cursor-pointer mr-1 ml-1"
-        >
-          <img
-            class="rounded-md w-50"
-            src="./img/Super Toch Photo.jpg"
-            alt="No Connection"
-          />
-          <h1 class="mt-0 font-thin">...پک دو عددی مداد چشم ضد آب مدل</h1>
-          <p
-            class="bottom-0 left-0 absolute text-black font-bold flex flex-row-reverse items-center gap-1"
-          >
-            <span>۶۷۸,۰۰۰</span>
-            <span>تومان</span>
-          </p>
-        </button>
-        <button
-          class="relative border border-gray-200 rounded-md h-70 flex items-end w-50 flex-col hover:bg-gray-200 cursor-pointer mr-1 ml-1"
-        >
-          <img
-            class="rounded-md w-50"
-            src="./img/Beladona Photo.jpg"
-            alt="No Connection"
-          />
-          <h1 class="mt-0 font-thin">رژگونه</h1>
-          <p
-            class="bottom-0 left-0 absolute text-black font-bold flex flex-row-reverse items-center gap-1"
-          >
-            <span>۹۱۸,۰۰۰</span>
-            <span>تومان</span>
-          </p>
-        </button>
-        <!-- <button class="relative border border-gray-200 rounded-md h-70 flex items-end w-50 flex-col hover:bg-gray-200 cursor-pointer mr-0 ml-1">
-                <img class="rounded-md w-50" src="./img/Lido Photo.jpg" alt="No Connection">
-                <h1 class="mt-0 font-thin">Kiss Able رژ لب مایع مدل</h1>
-                <p class="bottom-0 left-0 absolute text-black font-bold flex flex-row-reverse items-center gap-1">
-                    <span>۷۷۰,۰۰۰</span>
-                    <span>تومان</span>
-                </p>
-            </button> -->
-        <button class="cursor-pointer">
-          <img src="./img/Arayesh Lab.png" alt="No Connection" />
-        </button>
-      </div>
-      <div class="w-full flex justify-end mt-15 mr-60 ml-20">
-        <button
-          class="relative border border-gray-200 rounded-md h-70 flex items-end w-50 flex-col hover:bg-gray-200 cursor-pointer mr-1 ml-1"
-        >
-          <img
-            class="rounded-md w-50"
-            src="./img/Adlita Photo.jpg"
-            alt="No Connection"
-          />
-          <h1 class="mt-0 font-thin">پنکک</h1>
-          <p
-            class="bottom-0 left-0 absolute text-black font-bold flex flex-row-reverse items-center gap-1"
-          >
-            <span>۴۰۰,۰۰۰</span>
-            <span>تومان</span>
-          </p>
-        </button>
-        <button
-          class="relative border border-gray-200 rounded-md h-70 flex items-end w-50 flex-col hover:bg-gray-200 cursor-pointer mr-1 ml-1"
-        >
-          <img
-            class="rounded-md w-50"
-            src="./img/Vanora Photo.jpg"
-            alt="No Connection"
-          />
-          <h1 class="mt-0 font-thin">Select پالت رژ لب</h1>
-          <p
-            class="bottom-0 left-0 absolute text-black font-bold flex flex-row-reverse items-center gap-1"
-          >
-            <span>۵۹۹,۰۰۰</span>
-            <span>تومان</span>
-          </p>
-        </button>
-        <button
-          class="relative border border-gray-200 rounded-md h-70 flex items-end w-50 flex-col hover:bg-gray-200 cursor-pointer mr-1 ml-1"
-        >
-          <img
-            class="rounded-md w-50"
-            src="./img/Super Toch Photo.jpg"
-            alt="No Connection"
-          />
-          <h1 class="mt-0 font-thin">...پک دو عددی مداد چشم ضد آب مدل</h1>
-          <p
-            class="bottom-0 left-0 absolute text-black font-bold flex flex-row-reverse items-center gap-1"
-          >
-            <span>۶۷۸,۰۰۰</span>
-            <span>تومان</span>
-          </p>
-        </button>
-        <button
-          class="relative border border-gray-200 rounded-md h-70 flex items-end w-50 flex-col hover:bg-gray-200 cursor-pointer mr-1 ml-1"
-        >
-          <img
-            class="rounded-md w-50"
-            src="./img/Beladona Photo.jpg"
-            alt="No Connection"
-          />
-          <h1 class="mt-0 font-thin">رژگونه</h1>
-          <p
-            class="bottom-0 left-0 absolute text-black font-bold flex flex-row-reverse items-center gap-1"
-          >
-            <span>۹۱۸,۰۰۰</span>
-            <span>تومان</span>
-          </p>
-        </button>
-        <!-- <button class="relative border border-gray-200 rounded-md h-70 flex items-end w-50 flex-col hover:bg-gray-200 cursor-pointer mr-0 ml-1">
-                <img class="rounded-md w-50" src="./img/Lido Photo.jpg" alt="No Connection">
-                <h1 class="mt-0 font-thin">Kiss Able رژ لب مایع مدل</h1>
-                <p class="bottom-0 left-0 absolute text-black font-bold flex flex-row-reverse items-center gap-1">
-                    <span>۷۷۰,۰۰۰</span>
-                    <span>تومان</span>
-                </p>
-            </button> -->
-        <button class="cursor-pointer">
-          <img src="./img/Arayesh Lab.png" alt="No Connection" />
-        </button>
-      </div>
-      <div class="w-full flex justify-end mt-15 mr-60 ml-20">
-        <button
-          class="relative border border-gray-200 rounded-md h-70 flex items-end w-50 flex-col hover:bg-gray-200 cursor-pointer mr-1 ml-1"
-        >
-          <img
-            class="rounded-md w-50"
-            src="./img/Adlita Photo.jpg"
-            alt="No Connection"
-          />
-          <h1 class="mt-0 font-thin">پنکک</h1>
-          <p
-            class="bottom-0 left-0 absolute text-black font-bold flex flex-row-reverse items-center gap-1"
-          >
-            <span>۴۰۰,۰۰۰</span>
-            <span>تومان</span>
-          </p>
-        </button>
-        <button
-          class="relative border border-gray-200 rounded-md h-70 flex items-end w-50 flex-col hover:bg-gray-200 cursor-pointer mr-1 ml-1"
-        >
-          <img
-            class="rounded-md w-50"
-            src="./img/Vanora Photo.jpg"
-            alt="No Connection"
-          />
-          <h1 class="mt-0 font-thin">Select پالت رژ لب</h1>
-          <p
-            class="bottom-0 left-0 absolute text-black font-bold flex flex-row-reverse items-center gap-1"
-          >
-            <span>۵۹۹,۰۰۰</span>
-            <span>تومان</span>
-          </p>
-        </button>
-        <button
-          class="relative border border-gray-200 rounded-md h-70 flex items-end w-50 flex-col hover:bg-gray-200 cursor-pointer mr-1 ml-1"
-        >
-          <img
-            class="rounded-md w-50"
-            src="./img/Super Toch Photo.jpg"
-            alt="No Connection"
-          />
-          <h1 class="mt-0 font-thin">...پک دو عددی مداد چشم ضد آب مدل</h1>
-          <p
-            class="bottom-0 left-0 absolute text-black font-bold flex flex-row-reverse items-center gap-1"
-          >
-            <span>۶۷۸,۰۰۰</span>
-            <span>تومان</span>
-          </p>
-        </button>
-        <button
-          class="relative border border-gray-200 rounded-md h-70 flex items-end w-50 flex-col hover:bg-gray-200 cursor-pointer mr-1 ml-1"
-        >
-          <img
-            class="rounded-md w-50"
-            src="./img/Beladona Photo.jpg"
-            alt="No Connection"
-          />
-          <h1 class="mt-0 font-thin">رژگونه</h1>
-          <p
-            class="bottom-0 left-0 absolute text-black font-bold flex flex-row-reverse items-center gap-1"
-          >
-            <span>۹۱۸,۰۰۰</span>
-            <span>تومان</span>
-          </p>
-        </button>
-        <!-- <button class="relative border border-gray-200 rounded-md h-70 flex items-end w-50 flex-col hover:bg-gray-200 cursor-pointer mr-0 ml-1">
-                <img class="rounded-md w-50" src="./img/Lido Photo.jpg" alt="No Connection">
-                <h1 class="mt-0 font-thin">Kiss Able رژ لب مایع مدل</h1>
-                <p class="bottom-0 left-0 absolute text-black font-bold flex flex-row-reverse items-center gap-1">
-                    <span>۷۷۰,۰۰۰</span>
-                    <span>تومان</span>
-                </p>
-            </button> -->
-        <button class="cursor-pointer">
-          <img src="./img/Arayesh Lab.png" alt="No Connection" />
-        </button>
-      </div>
-      <div class="w-screen flex flex-col items-center justify-center mt-10">
-        <button class="w-auto flex cursor-pointer mt-10">
-          <img
-            class="h-60 w-auto"
-            src="./img/Arayesh Sade.jpeg"
-            alt="No Connection"
-          />
-        </button>
-      </div>
-      <div class="flex w-full px-12 mt-10">
-        <button class="cursor-pointer">
-          <img class="pr-5" src="./img/Ye Negah 4.png" alt="No Connection" />
-        </button>
-        <button class="cursor-pointer">
-          <img class="pr-5" src="./img/Ye Negah 3.png" alt="No Connection" />
-        </button>
-        <button class="cursor-pointer">
-          <img class="pr-5" src="./img/Ye Negah 2.png" alt="No Connection" />
-        </button>
-        <button class="cursor-pointer">
-          <img class="" src="./img/Ye Negah 1.png" alt="No Connection" />
-        </button>
-      </div>
-    </section>
-    <footer>
-      <div
-        class="bg-black h-120 w-screen mt-20 text-white text-right flex justify-end relative"
-      >
-        <ul class="mr-20 pt-15 space-y-3 mr-50">
-          <h4 class="font-bold mb-5">خدمات مشتریان</h4>
-          <li><a href="#" class="hover:text-pink-400">پرسش های متداول</a></li>
-          <li>
-            <a href="#" class="hover:text-pink-400">راهنمای خرید و پرداخت</a>
-          </li>
-          <li><a href="#" class="hover:text-pink-400">رویه های ارسال</a></li>
-          <li><a href="#" class="hover:text-pink-400">شرایط مرجوعی</a></li>
-          <li><a href="#" class="hover:text-pink-400">خرید کالای شانس</a></li>
-          <li>
-            <a href="#" class="hover:text-pink-400">ارتباط با پشتیبانی</a>
-          </li>
-        </ul>
-        <ul class="mr-20 pt-15 space-y-3">
-          <h4 class="font-bold mb-5">شرکت خانومی</h4>
-          <li>
-            <a href="#" class="hover:text-pink-400 hover:border-b-pink-500"
-              >تماس با ما</a
-            >
-          </li>
-          <li><a href="#" class="hover:text-pink-400">درباره ما</a></li>
-          <li><a href="#" class="hover:text-pink-400">فرصت‌های شغلی</a></li>
-          <li><a href="#" class="hover:text-pink-400">حریم خصوصی</a></li>
-          <li><a href="#" class="hover:text-pink-400">مجله خانومی</a></li>
-          <li><a href="#" class="hover:text-pink-400">خانومی بیزینس</a></li>
-          <li><a href="#" class="hover:text-pink-400">خانومی TV</a></li>
-        </ul>
+      <nav class="mt-5 hidden xl:block">
         <div
-          class="text-gray-300 absolute bottom-0 justify-center flex pb-4 w-full font-thin"
+          class="flex h-12 bg-black w-full text-white justify-evenly font-bold"
         >
-          <p>.کلیه حقوق این سایت متعلق به فروشگاه آنلاین خانومی می باشد</p>
+          <button
+            class="hover:text-pink-500 cursor-pointer block w-full md:w-auto text-center"
+          >
+            مجله خانومی</button
+          ><button
+            class="hover:text-pink-500 cursor-pointer block w-full md:w-auto text-center"
+          >
+            طلا و نقره</button
+          ><button
+            class="hover:text-pink-500 cursor-pointer block w-full md:w-auto text-center"
+          >
+            کالای دیجیتال</button
+          ><button
+            class="hover:text-pink-500 cursor-pointer block w-full md:w-auto text-center"
+          >
+            مد و پوشاک</button
+          ><button
+            class="hover:text-pink-500 cursor-pointer block w-full md:w-auto text-center"
+          >
+            مکمل غذایی و ورزشی</button
+          ><button
+            class="hover:text-pink-500 cursor-pointer block w-full md:w-auto text-center"
+          >
+            لوازم برقی</button
+          ><button
+            class="hover:text-pink-500 cursor-pointer block w-full md:w-auto text-center"
+          >
+            عطر و اسپری</button
+          ><button
+            class="hover:text-pink-500 cursor-pointer block w-full md:w-auto text-center"
+          >
+            بهداشت شخصی</button
+          ><button
+            class="hover:text-pink-500 cursor-pointer block w-full md:w-auto text-center"
+          >
+            مراقب و زیبایی مو</button
+          ><button
+            class="hover:text-pink-500 cursor-pointer block w-full md:w-auto text-center"
+          >
+            مراقب پوست</button
+          ><button
+            class="hover:text-pink-500 cursor-pointer block w-full md:w-auto text-center"
+          >
+            آرایشی</button
+          ><button
+            class="hover:text-pink-500 cursor-pointer block w-full md:w-auto text-center"
+          >
+            برندها
+          </button>
         </div>
-      </div>
-      <div class="bg-white h-50 text-right w-auto ml-20 mt-10">
-        <h5 class="font-bold">
-          خرید لوازم آرایشی و بهداشتی از فروشگاه اینترنتی خانومی
-        </h5>
-        <p class="font-thin text-gray-500 pt-3">
-          فروشگاه لوازم آرایشی و بهداشتی خانومی با عرضه بهترین برندهای لوازم
-          آرایش، عطر و ادکلن اصل و تمامی لوازم بهداشتی و مراقبتی پوست و مو،
-          امکان خرید اینترنتی امن را برای شما فراهم کرده است. شما در خانومی به
-          آسانی به مجموعه کاملی از برندهای آرایشی و بهداشتی دسترسی خواهید داشت؛
-          چون فروشگاه اینترنتی خانومی، نمایندگی رسمی تمامی برندهای آرایشی و
-          بهداشتی است.
-        </p>
-        <h6 class="text-left mt-10 text-pink-500 cursor-pointer">
-          < مشاهده بیشتر
-        </h6>
-      </div>
-    </footer>
+      </nav>
+    <section class="w-full flex flex-col items-center justify-center mt-4 md:mt-10 px-4">
+        <button class="w-full max-w-6xl flex justify-center cursor-pointer">
+            <img class="h-40 md:h-60 lg:h-80 xl:h-90 w-full object-cover rounded-lg" src="./img/Rozh.jpeg" alt="بنر تبلیغاتی محصولات آرایشی" />
+        </button>
+        
+        <button class="w-full max-w-4xl flex justify-center cursor-pointer mt-6 md:mt-10">
+            <img class="h-32 md:h-44 lg:h-52 xl:h-60 w-full object-cover rounded-lg" src="./img/Takhfif.jpeg" alt="بنر تخفیف ویژه" />
+        </button>
+        
+        <div class="flex justify-center w-full max-w-4xl mt-6 md:mt-10">
+            <video class="w-full h-auto rounded-lg shadow-lg" controls>
+                <source src="./Video/Makeup Video.mp4" type="video/mp4" />
+                مرورگر شما از ویدیو پشتیبانی نمی‌کند.
+            </video>
+        </div>
+        
+        <div class="w-full max-w-7xl mt-8 md:mt-12 lg:mt-15">
+            <div class="flex overflow-x-auto space-x-4 md:space-x-0 md:grid md:grid-cols-5 md:gap-4 pb-4 md:pb-0 scrollbar-hide">
+                <button class="flex-shrink-0 relative border border-gray-200 rounded-lg h-70 w-50 flex flex-col items-end hover:bg-gray-200 cursor-pointer overflow-hidden">
+                    <img class="rounded-md w-full h-40 object-cover" src="./img/Adlita Photo.jpg" alt="پنکک آرایشی" />
+                    <div class="p-2 w-full">
+                        <h1 class="text-sm font-light text-right">پنکک</h1>
+                        <p class="text-black font-bold flex flex-row-reverse items-center gap-1 justify-end mt-1">
+                            <span>۴۰۰,۰۰۰</span>
+                            <span>تومان</span>
+                        </p>
+                    </div>
+                </button>
+                
+                <button class="flex-shrink-0 relative border border-gray-200 rounded-lg h-70 w-50 flex flex-col items-end hover:bg-gray-200 cursor-pointer overflow-hidden">
+                    <img class="rounded-md w-full h-40 object-cover" src="./img/Vanora Photo.jpg" alt="پالت رژ لب" />
+                    <div class="p-2 w-full">
+                        <h1 class="text-sm font-light text-right">Select پالت رژ لب</h1>
+                        <p class="text-black font-bold flex flex-row-reverse items-center gap-1 justify-end mt-1">
+                            <span>۵۹۹,۰۰۰</span>
+                            <span>تومان</span>
+                        </p>
+                    </div>
+                </button>
+                
+                <button class="flex-shrink-0 relative border border-gray-200 rounded-lg h-70 w-50 flex flex-col items-end hover:bg-gray-200 cursor-pointer overflow-hidden">
+                    <img class="rounded-md w-full h-40 object-cover" src="./img/Super Toch Photo.jpg" alt="مداد چشم ضد آب" />
+                    <div class="p-2 w-full">
+                        <h1 class="text-sm font-light text-right">...پک دو عددی مداد چشم ضد آب مدل</h1>
+                        <p class="text-black font-bold flex flex-row-reverse items-center gap-1 justify-end mt-1">
+                            <span>۶۷۸,۰۰۰</span>
+                            <span>تومان</span>
+                        </p>
+                    </div>
+                </button>
+                
+                <button class="flex-shrink-0 relative border border-gray-200 rounded-lg h-70 w-50 flex flex-col items-end hover:bg-gray-200 cursor-pointer overflow-hidden">
+                    <img class="rounded-md w-full h-40 object-cover" src="./img/Beladona Photo.jpg" alt="رژگونه" />
+                    <div class="p-2 w-full">
+                        <h1 class="text-sm font-light text-right">رژگونه</h1>
+                        <p class="text-black font-bold flex flex-row-reverse items-center gap-1 justify-end mt-1">
+                            <span>۹۱۸,۰۰۰</span>
+                            <span>تومان</span>
+                        </p>
+                    </div>
+                </button>
+                
+                <button class="flex-shrink-0 border border-gray-200 rounded-lg h-70 w-50 flex items-center justify-center hover:bg-gray-200 cursor-pointer">
+                    <img class="w-16 h-16 object-contain" src="./img/Arayesh Lab.png" alt="مشاهده محصولات بیشتر" />
+                </button>
+            </div>
+        </div>
+        
+        <div class="w-full max-w-7xl mt-8 md:mt-12 lg:mt-15">
+            <div class="flex overflow-x-auto space-x-4 md:space-x-0 md:grid md:grid-cols-5 md:gap-4 pb-4 md:pb-0 scrollbar-hide">
+                <button class="flex-shrink-0 relative border border-gray-200 rounded-lg h-70 w-50 flex flex-col items-end hover:bg-gray-200 cursor-pointer overflow-hidden">
+                    <img class="rounded-md w-full h-40 object-cover" src="./img/Adlita Photo.jpg" alt="پنکک آرایشی" />
+                    <div class="p-2 w-full">
+                        <h1 class="text-sm font-light text-right">پنکک</h1>
+                        <p class="text-black font-bold flex flex-row-reverse items-center gap-1 justify-end mt-1">
+                            <span>۴۰۰,۰۰۰</span>
+                            <span>تومان</span>
+                        </p>
+                    </div>
+                </button>
+                
+                <button class="flex-shrink-0 relative border border-gray-200 rounded-lg h-70 w-50 flex flex-col items-end hover:bg-gray-200 cursor-pointer overflow-hidden">
+                    <img class="rounded-md w-full h-40 object-cover" src="./img/Vanora Photo.jpg" alt="پالت رژ لب" />
+                    <div class="p-2 w-full">
+                        <h1 class="text-sm font-light text-right">Select پالت رژ لب</h1>
+                        <p class="text-black font-bold flex flex-row-reverse items-center gap-1 justify-end mt-1">
+                            <span>۵۹۹,۰۰۰</span>
+                            <span>تومان</span>
+                        </p>
+                    </div>
+                </button>
+                
+                <button class="flex-shrink-0 relative border border-gray-200 rounded-lg h-70 w-50 flex flex-col items-end hover:bg-gray-200 cursor-pointer overflow-hidden">
+                    <img class="rounded-md w-full h-40 object-cover" src="./img/Super Toch Photo.jpg" alt="مداد چشم ضد آب" />
+                    <div class="p-2 w-full">
+                        <h1 class="text-sm font-light text-right">...پک دو عددی مداد چشم ضد آب مدل</h1>
+                        <p class="text-black font-bold flex flex-row-reverse items-center gap-1 justify-end mt-1">
+                            <span>۶۷۸,۰۰۰</span>
+                            <span>تومان</span>
+                        </p>
+                    </div>
+                </button>
+                
+                <button class="flex-shrink-0 relative border border-gray-200 rounded-lg h-70 w-50 flex flex-col items-end hover:bg-gray-200 cursor-pointer overflow-hidden">
+                    <img class="rounded-md w-full h-40 object-cover" src="./img/Beladona Photo.jpg" alt="رژگونه" />
+                    <div class="p-2 w-full">
+                        <h1 class="text-sm font-light text-right">رژگونه</h1>
+                        <p class="text-black font-bold flex flex-row-reverse items-center gap-1 justify-end mt-1">
+                            <span>۹۱۸,۰۰۰</span>
+                            <span>تومان</span>
+                        </p>
+                    </div>
+                </button>
+                
+                <button class="flex-shrink-0 border border-gray-200 rounded-lg h-70 w-50 flex items-center justify-center hover:bg-gray-200 cursor-pointer">
+                    <img class="w-16 h-16 object-contain" src="./img/Arayesh Lab.png" alt="مشاهده محصولات بیشتر" />
+                </button>
+            </div>
+        </div>
+        
+        <div class="w-full max-w-7xl mt-8 md:mt-12 lg:mt-15">
+            <div class="flex overflow-x-auto space-x-4 md:space-x-0 md:grid md:grid-cols-5 md:gap-4 pb-4 md:pb-0 scrollbar-hide">
+                <button class="flex-shrink-0 relative border border-gray-200 rounded-lg h-70 w-50 flex flex-col items-end hover:bg-gray-200 cursor-pointer overflow-hidden">
+                    <img class="rounded-md w-full h-40 object-cover" src="./img/Adlita Photo.jpg" alt="پنکک آرایشی" />
+                    <div class="p-2 w-full">
+                        <h1 class="text-sm font-light text-right">پنکک</h1>
+                        <p class="text-black font-bold flex flex-row-reverse items-center gap-1 justify-end mt-1">
+                            <span>۴۰۰,۰۰۰</span>
+                            <span>تومان</span>
+                        </p>
+                    </div>
+                </button>
+                
+                <button class="flex-shrink-0 relative border border-gray-200 rounded-lg h-70 w-50 flex flex-col items-end hover:bg-gray-200 cursor-pointer overflow-hidden">
+                    <img class="rounded-md w-full h-40 object-cover" src="./img/Vanora Photo.jpg" alt="پالت رژ لب" />
+                    <div class="p-2 w-full">
+                        <h1 class="text-sm font-light text-right">Select پالت رژ لب</h1>
+                        <p class="text-black font-bold flex flex-row-reverse items-center gap-1 justify-end mt-1">
+                            <span>۵۹۹,۰۰۰</span>
+                            <span>تومان</span>
+                        </p>
+                    </div>
+                </button>
+                
+                <button class="flex-shrink-0 relative border border-gray-200 rounded-lg h-70 w-50 flex flex-col items-end hover:bg-gray-200 cursor-pointer overflow-hidden">
+                    <img class="rounded-md w-full h-40 object-cover" src="./img/Super Toch Photo.jpg" alt="مداد چشم ضد آب" />
+                    <div class="p-2 w-full">
+                        <h1 class="text-sm font-light text-right">...پک دو عددی مداد چشم ضد آب مدل</h1>
+                        <p class="text-black font-bold flex flex-row-reverse items-center gap-1 justify-end mt-1">
+                            <span>۶۷۸,۰۰۰</span>
+                            <span>تومان</span>
+                        </p>
+                    </div>
+                </button>
+                
+                <button class="flex-shrink-0 relative border border-gray-200 rounded-lg h-70 w-50 flex flex-col items-end hover:bg-gray-200 cursor-pointer overflow-hidden">
+                    <img class="rounded-md w-full h-40 object-cover" src="./img/Beladona Photo.jpg" alt="رژگونه" />
+                    <div class="p-2 w-full">
+                        <h1 class="text-sm font-light text-right">رژگونه</h1>
+                        <p class="text-black font-bold flex flex-row-reverse items-center gap-1 justify-end mt-1">
+                            <span>۹۱۸,۰۰۰</span>
+                            <span>تومان</span>
+                        </p>
+                    </div>
+                </button>
+                
+                <button class="flex-shrink-0 border border-gray-200 rounded-lg h-70 w-50 flex items-center justify-center hover:bg-gray-200 cursor-pointer">
+                    <img class="w-16 h-16 object-contain" src="./img/Arayesh Lab.png" alt="مشاهده محصولات بیشتر" />
+                </button>
+            </div>
+        </div>
+                <div class="w-full flex flex-col items-center justify-center mt-8 md:mt-10">
+            <button class="w-full max-w-4xl flex justify-center cursor-pointer mt-6 md:mt-10">
+                <img class="h-32 md:h-44 lg:h-52 xl:h-60 w-full object-cover rounded-lg" src="./img/Arayesh Sade.jpeg" alt="بنر آرایش ساده" />
+            </button>
+        </div>
+        
+        <div class="w-full max-w-6xl mt-8 md:mt-10">
+            <div class="flex overflow-x-auto space-x-4 md:space-x-0 md:flex md:justify-between pb-4 md:pb-0 scrollbar-hide px-4 md:px-12">
+                <button class="flex-shrink-0 cursor-pointer">
+                    <img class="h-16 md:h-20 w-auto object-contain" src="./img/Ye Negah 4.png" alt="لوگو 1" />
+                </button>
+                <button class="flex-shrink-0 cursor-pointer">
+                    <img class="h-16 md:h-20 w-auto object-contain" src="./img/Ye Negah 3.png" alt="لوگو 2" />
+                </button>
+                <button class="flex-shrink-0 cursor-pointer">
+                    <img class="h-16 md:h-20 w-auto object-contain" src="./img/Ye Negah 2.png" alt="لوگو 3" />
+                </button>
+                <button class="flex-shrink-0 cursor-pointer">
+                    <img class="h-16 md:h-20 w-auto object-contain" src="./img/Ye Negah 1.png" alt="لوگو 4" />
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <style>
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+    <footer class="w-full">
+        <div
+          class="bg-black h-auto md:h-120 w-full mt-20 text-white text-right flex flex-wrap justify-between md:justify-end relative px-4 md:px-0"
+        >
+          <ul class="w-1/2 md:w-auto md:mr-20 pt-8 md:pt-15 space-y-3">
+            <h4 class="font-bold mb-5 text-sm md:text-base">خدمات مشتریان</h4>
+            <li>
+              <a class="hover:text-pink-400 text-xs md:text-base" href="#"
+                >پرسش های متداول</a
+              >
+            </li>
+            <li>
+              <a class="hover:text-pink-400 text-xs md:text-base" href="#"
+                >راهنمای خرید و پرداخت</a
+              >
+            </li>
+            <li>
+              <a class="hover:text-pink-400 text-xs md:text-base" href="#"
+                >رویه های ارسال</a
+              >
+            </li>
+            <li>
+              <a class="hover:text-pink-400 text-xs md:text-base" href="#"
+                >شرایط مرجوعی</a
+              >
+            </li>
+            <li>
+              <a class="hover:text-pink-400 text-xs md:text-base" href="#"
+                >خرید کالای شانس</a
+              >
+            </li>
+            <li>
+              <a class="hover:text-pink-400 text-xs md:text-base" href="#"
+                >ارتباط با پشتیبانی</a
+              >
+            </li>
+          </ul>
+          <ul class="w-1/2 md:w-auto md:mr-20 pt-8 md:pt-15 space-y-3">
+            <h4 class="font-bold mb-5 text-sm md:text-base">شرکت خانومی</h4>
+            <li>
+              <a class="hover:text-pink-400 text-xs md:text-base" href="#"
+                >تماس با ما</a
+              >
+            </li>
+            <li>
+              <a class="hover:text-pink-400 text-xs md:text-base" href="#"
+                >درباره ما</a
+              >
+            </li>
+            <li>
+              <a class="hover:text-pink-400 text-xs md:text-base" href="#"
+                >فرصت‌های شغلی</a
+              >
+            </li>
+            <li>
+              <a class="hover:text-pink-400 text-xs md:text-base" href="#"
+                >حریم خصوصی</a
+              >
+            </li>
+            <li>
+              <a class="hover:text-pink-400 text-xs md:text-base" href="#"
+                >مجله خانومی</a
+              >
+            </li>
+            <li>
+              <a class="hover:text-pink-400 text-xs md:text-base" href="#"
+                >خانومی بیزینس</a
+              >
+            </li>
+            <li>
+              <a class="hover:text-pink-400 text-xs md:text-base" href="#"
+                >خانومی TV</a
+              >
+            </li>
+          </ul>
+          <div
+            class="text-gray-300 text-center md:absolute bottom-0 justify-center flex py-4 md:pb-4 w-full font-thin mt-4 md:mt-0"
+          >
+            <p class="text-sm md:text-base">
+              .کلیه حقوق این سایت متعلق به فروشگاه آنلاین خانومی می باشد
+            </p>
+          </div>
+        </div>
+        <div class="bg-white h-auto text-right w-full px-4 md:px-20 mt-10">
+          <h5 class="font-bold text-sm md:text-xl">
+            خرید لوازم آرایشی و بهداشتی از فروشگاه اینترنتی خانومی
+          </h5>
+          <p class="font-thin text-gray-500 pt-3 text-xs md:text-base">
+            فروشگاه لوازم آرایشی و بهداشتی خانومی با عرضه بهترین برندهای لوازم
+            آرایش، عطر و ادکلن اصل و تمامی لوازم بهداشتی و مراقبتی پوست و مو،
+            امکان خرید اینترنتی امن را برای شما فراهم کرده است. شما در خانومی به
+            آسانی به مجموعه کاملی از برندهای آرایشی و بهداشتی دسترسی خواهید
+            داشت؛ چون فروشگاه اینترنتی خانومی، نمایندگی رسمی تمامی برندهای
+            آرایشی و بهداشتی است.
+          </p>
+          <h6
+            class="text-left mt-6 md:mt-10 text-pink-500 cursor-pointer text-sm md:text-base"
+          >
+            &lt; مشاهده بیشتر
+          </h6>
+        </div>
+      </footer>
   </body>
 </html>
