@@ -14,10 +14,10 @@
   </head>
   <body class="overflow-x-hidden">
     <div class="w-full">
-      <button class="w-full block md:w-auto text-center">
+      <button class="w-full">
         <img
-          alt="No Connection"
-          class="w-full h-auto"
+          alt="First Buy Banner"
+          class="w-full h-auto md:h-full object-contain"
           src="./img/First Buy Copy.jpeg"
         />
       </button>
@@ -154,32 +154,33 @@
       </nav>
 
       <section class="px-4 md:px-20">
-        <div class="w-full">
-          <div>
-            <div class="mt-10 w-full h-auto">
-              <button
-                class="block w-full md:w-auto text-center"
-                onclick="window.location.href='sorom.html'"
-              >
-                <img
-                  alt="No Connection"
-                  class="w-full h-auto cursor-pointer"
-                  src="./img/Women Photo 1.jpeg"
-                />
-              </button>
-            </div>
-            <div>
-              <button
-                class="w-full mt-8 h-auto block md:w-auto text-center"
-                onclick="window.location.href='sorom.html'"
-              >
-                <img
-                  alt="No Connection"
-                  class="w-full h-auto cursor-pointer mt-2"
-                  src="./img/Gold Photo.jpeg"
-                />
-              </button>
-            </div>
+        <div
+          class="max-w-4xl mx-auto lg:max-w-5xl xl:max-w-6xl 2xl:max-w-[1800px] 2xl:mx-20 p-4 md:p-6"
+        >
+          <div class="w-full mb-6 md:mb-8 lg:mb-12">
+            <button
+              class="w-full h-auto block transition-all duration-300 hover:scale-[1.02] hover:shadow-xl rounded-xl overflow-hidden"
+              onclick="window.location.href='sorom.html'"
+            >
+              <img
+                alt="تصویر زنان"
+                class="w-full h-auto object-cover"
+                src="./img/Women%20Photo%201.jpeg"
+              />
+            </button>
+          </div>
+
+          <div class="w-full">
+            <button
+              class="w-full h-auto block transition-all duration-300 hover:scale-[1.02] hover:shadow-xl rounded-xl overflow-hidden"
+              onclick="window.location.href='sorom.html'"
+            >
+              <img
+                alt="تصویر طلا"
+                class="w-full h-auto object-cover"
+                src="./img/Gold%20Photo.jpeg"
+              />
+            </button>
           </div>
         </div>
         <div class="font-bold">
@@ -214,7 +215,7 @@
         </div>
 
         <div
-          class="h-auto mt-2 flex overflow-x-auto lg:overflow-visible md:justify-end py-2"
+          class="h-auto mt-2 flex overflow-x-auto [@media(max-width:1650px)]:overflow-x-auto [@media(min-width:1651px)]:overflow-visible md:justify-end py-2 [@media(max-width:1650px)]:max-w-full"
         >
           <div class="flex space-x-2 md:space-x-0 min-w-max md:min-w-0">
             <button
@@ -314,6 +315,68 @@
                 class="text-black font-bold flex flex-row-reverse items-center gap-1 text-sm md:text-base px-2 pb-2 w-full"
               >
                 <span>۷۷۰,۰۰۰</span>
+                <span>تومان</span>
+              </p>
+            </button>
+          </div>
+          <div class="flex space-x-2 md:space-x-0 min-w-max md:min-w-0">
+            <button
+              class="relative border border-gray-200 rounded-md h-60 md:h-70 flex items-end w-40 md:w-50 flex-col hover:bg-gray-200 cursor-pointer min-w-[160px]"
+            >
+              <img
+                alt="No Connection"
+                class="rounded-md w-full h-40 md:h-50 object-cover"
+                src="./img/Adlita Photo.jpg"
+              />
+              <h1
+                class="mt-2 font-thin text-sm md:text-xl px-2 text-right w-full"
+              >
+                پنکک
+              </h1>
+              <p
+                class="text-black font-bold flex flex-row-reverse items-center gap-1 text-sm md:text-base px-2 pb-2 w-full"
+              >
+                <span>۴۰۰,۰۰۰</span>
+                <span>تومان</span>
+              </p>
+            </button>
+            <button
+              class="relative border border-gray-200 rounded-md h-60 md:h-70 flex items-end w-40 md:w-50 flex-col hover:bg-gray-200 cursor-pointer min-w-[160px]"
+            >
+              <img
+                alt="No Connection"
+                class="rounded-md w-full h-40 md:h-50 object-cover"
+                src="./img/Vanora Photo.jpg"
+              />
+              <h1
+                class="mt-2 font-thin text-sm md:text-xl px-2 text-right w-full"
+              >
+                Select پالت رژ لب
+              </h1>
+              <p
+                class="text-black font-bold flex flex-row-reverse items-center gap-1 text-sm md:text-base px-2 pb-2 w-full"
+              >
+                <span>۵۹۹,۰۰۰</span>
+                <span>تومان</span>
+              </p>
+            </button>
+            <button
+              class="relative border border-gray-200 rounded-md h-60 md:h-70 flex items-end w-40 md:w-50 flex-col hover:bg-gray-200 cursor-pointer min-w-[160px]"
+            >
+              <img
+                alt="No Connection"
+                class="rounded-md w-full h-40 md:h-50 object-cover"
+                src="./img/Super Toch Photo.jpg"
+              />
+              <h1
+                class="mt-2 font-thin text-sm md:text-xl px-2 text-right w-full truncate"
+              >
+                ...پک دو عددی مداد چشم ضد آب مدل
+              </h1>
+              <p
+                class="text-black font-bold flex flex-row-reverse items-center gap-1 text-sm md:text-base px-2 pb-2 w-full"
+              >
+                <span>۶۷۸,۰۰۰</span>
                 <span>تومان</span>
               </p>
             </button>
@@ -457,9 +520,89 @@
             </button>
           </div>
           <div
-            class="h-auto mt-2 flex overflow-x-auto lg:overflow-visible justify-center py-2 px-4 md:px-0"
+            class="h-auto mt-2 flex overflow-x-auto lg:overflow-visible justify-end py-2  md:px-0"
           >
-            <div class="flex space-x-2 md:space-x-4 min-w-max md:min-w-0">
+            <div class="flex  min-w-max md:min-w-0">
+              <button
+                class="relative border border-gray-200 rounded-md h-60 md:h-70 flex items-end w-40 md:w-50 flex-col hover:bg-gray-200 cursor-pointer min-w-[160px]"
+              >
+                <img
+                  class="rounded-md w-full h-40 md:h-50 object-cover"
+                  src="./img/Dana.jpg"
+                  alt="No Connection"
+                />
+                <h1
+                  class="mt-2 font-thin text-sm md:text-base px-2 text-right w-full truncate"
+                >
+                  ...کپسول زینک 10 میلی گرم
+                </h1>
+                <p
+                  class="text-black font-bold flex flex-row-reverse items-center gap-1 text-sm md:text-base px-2 pb-2 w-full"
+                >
+                  <span>۱۶۳,۵۰۰</span>
+                  <span>تومان</span>
+                </p>
+              </button>
+              <button
+                class="relative border border-gray-200 rounded-md h-60 md:h-70 flex items-end w-40 md:w-50 flex-col hover:bg-gray-200 cursor-pointer min-w-[160px]"
+              >
+                <img
+                  class="rounded-md w-full h-40 md:h-50 object-cover"
+                  src="./img/Intra Farm.jpg"
+                  alt="No Connection"
+                />
+                <h1
+                  class="mt-2 font-thin text-sm md:text-base px-2 text-right w-full"
+                >
+                  کپسول ففول بسته 30 عددی
+                </h1>
+                <p
+                  class="text-black font-bold flex flex-row-reverse items-center gap-1 text-sm md:text-base px-2 pb-2 w-full"
+                >
+                  <span>۳۰۷,۲۰۰</span>
+                  <span>تومان</span>
+                </p>
+              </button>
+              <button
+                class="relative border border-gray-200 rounded-md h-60 md:h-70 flex items-end w-40 md:w-50 flex-col hover:bg-gray-200 cursor-pointer min-w-[160px]"
+              >
+                <img
+                  class="rounded-md w-full h-40 md:h-50 object-cover"
+                  src="./img/Youro Vital.jpg"
+                  alt="No Connection"
+                />
+                <h1
+                  class="mt-2 font-thin text-sm md:text-base px-2 text-right w-full truncate"
+                >
+                  قرص کلاژن 1000 میلی گرم و ویتامین C بسته 30 عددی
+                </h1>
+                <p
+                  class="text-black font-bold flex flex-row-reverse items-center gap-1 text-sm md:text-base px-2 pb-2 w-full"
+                >
+                  <span>۳۱۹,۰۰۰</span>
+                  <span>تومان</span>
+                </p>
+              </button>
+              <button
+                class="relative border border-gray-200 rounded-md h-60 md:h-70 flex items-end w-40 md:w-50 flex-col hover:bg-gray-200 cursor-pointer min-w-[160px]"
+              >
+                <img
+                  class="rounded-md w-full h-40 md:h-50 object-cover"
+                  src="./img/Kale.jpg"
+                  alt="No Connection"
+                />
+                <h1
+                  class="mt-2 font-thin text-sm md:text-base px-2 text-right w-full"
+                >
+                  مکمل با طعم شکلات وزن 650 گرم
+                </h1>
+                <p
+                  class="text-black font-bold flex flex-row-reverse items-center gap-1 text-sm md:text-base px-2 pb-2 w-full"
+                >
+                  <span>۶۰۰,۰۰۰</span>
+                  <span>تومان</span>
+                </p>
+              </button>
               <button
                 class="relative border border-gray-200 rounded-md h-60 md:h-70 flex items-end w-40 md:w-50 flex-col hover:bg-gray-200 cursor-pointer min-w-[160px]"
               >
