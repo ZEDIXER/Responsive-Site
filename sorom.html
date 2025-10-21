@@ -1,17 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>سرم های پوستی</title>
-    <link rel="stylesheet" href="./font.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/vazir-font@24.1.0/dist/font-face.css"
       rel="stylesheet"
     />
+    <style>
+      body {
+        font-family: Vazir, sans-serif;
+      }
+    </style>
   </head>
-  <body class="overflow-x-hidden">
+  <body class="overflow-x-hidden bg-gray-50">
+    <!-- بنر اول -->
     <button class="w-full">
       <img
         alt="First Buy Banner"
@@ -20,53 +25,22 @@
       />
     </button>
 
-    <header class="flex h-18 mt-0 w-full px-2 md:px-0">
-      <div class="flex items-center w-1/2 pt-5 pl-2 md:pl-8">
+    <header
+      class="flex justify-between items-center h-18 w-full px-4 md:px-8 bg-white shadow-sm"
+    >
+      <div class="flex items-center gap-4">
         <button
           class="cursor-pointer"
-          onclick="window.location.href='shopping cart.html'"
+          onclick="window.location.href='main.html'"
         >
           <img
-            alt="No Connection"
-            class="ml-2 md:ml-5 w-6 h-6 md:w-8 md:h-8"
-            src="./img/Sopping Cart.png"
+            alt="Khanomi Logo"
+            class="w-16 h-16 md:w-20 lg:w-24 xl:w-28"
+            src="./img/Khanomi Logo.svg"
           />
         </button>
-        <div
-          class="flex border-1 border-pink-500 ml-2 md:ml-5 rounded-md h-8 md:h-10 justify-center"
-        >
-          <button
-            class="flex items-center cursor-pointer w-auto md:w-35 justify-center px-2 md:px-0"
-            onclick="window.location.href='login.html'"
-          >
-            <p class="font-bold pr-2 text-pink-500 text-xs md:text-base">
-              ورود
-            </p>
-            <img
-              alt="No Connection"
-              class="w-4 h-4 md:w-6 md:h-6"
-              src="./img/Login Icon.png"
-            />
-          </button>
-        </div>
-      </div>
 
-      <div class="flex items-center w-1/2 justify-end pt-5 pr-2 md:pr-8">
-        <input
-          class="hidden xl:flex border-1 cursor-pointer pr-8 border-gray-300 rounded-sm h-10 items-center text-right bg-no-repeat bg-right placeholder-gray-400 w-64 mr-4"
-          placeholder="جست و جو"
-          style="
-            background-image: url('./img/Search Icon.png');
-            background-size: 20px;
-          "
-          type="text"
-        />
-
-        <button class="xl:hidden p-2 mr-4">
-          <img alt="Search" class="w-6 h-6" src="./img/Search Icon.png" />
-        </button>
-
-        <button class="xl:hidden text-black p-2 rounded mr-4 cursor-pointer">
+        <button class="xl:hidden text-black p-2 rounded cursor-pointer">
           <svg
             class="w-6 h-6"
             fill="none"
@@ -82,673 +56,874 @@
           </svg>
         </button>
 
+        <button class="xl:hidden p-2">
+          <img alt="Search" class="w-6 h-6" src="./img/Search Icon.png" />
+        </button>
+
+        <div class="hidden xl:flex items-center">
+          <input
+            class="border border-gray-300 cursor-pointer pr-8 rounded h-10 items-center text-right bg-no-repeat bg-right placeholder-gray-400 w-64"
+            placeholder="جست و جو"
+            style="
+              background-image: url('./img/Search Icon.png');
+              background-size: 20px;
+            "
+            type="text"
+          />
+        </div>
+      </div>
+
+      <div class="flex items-center gap-4 md:gap-6">
+        <div
+          class="flex border border-pink-500 rounded-md h-8 md:h-10 justify-center"
+        >
+          <button
+            class="flex items-center cursor-pointer justify-center px-3 md:px-4"
+            onclick="window.location.href='login.html'"
+          >
+            <img
+              alt="Login"
+              class="w-4 h-4 md:w-5 md:h-5 ml-2"
+              src="./img/Login Icon.png"
+            />
+            <p class="font-bold text-pink-500 text-xs md:text-sm">ورود</p>
+          </button>
+        </div>
+
         <button
           class="cursor-pointer"
-          onclick="window.location.href='main.html'"
+          onclick="window.location.href='shopping cart.html'"
         >
           <img
-            alt="No Connection"
-            class="w-16 h-16 md:w-25 lg:w-30 xl:w-35"
-            src="./img/Khanomi Logo.svg"
+            alt="Shopping Cart"
+            class="w-6 h-6 md:w-7 md:h-7"
+            src="./img/Sopping Cart.png"
           />
         </button>
       </div>
     </header>
 
-    <nav class="mt-5 hidden xl:block">
+    <nav class="hidden xl:block mt-5">
       <div
-        class="flex h-12 bg-black w-full text-white justify-evenly font-bold"
+        class="flex h-12 bg-black w-full text-white justify-between font-bold px-4"
       >
-        <button
-          class="hover:text-pink-500 cursor-pointer block w-full md:w-auto text-center"
-        >
-          مجله خانومی</button
-        ><button
-          class="hover:text-pink-500 cursor-pointer block w-full md:w-auto text-center"
-        >
-          طلا و نقره</button
-        ><button
-          class="hover:text-pink-500 cursor-pointer block w-full md:w-auto text-center"
-        >
-          کالای دیجیتال</button
-        ><button
-          class="hover:text-pink-500 cursor-pointer block w-full md:w-auto text-center"
-        >
-          مد و پوشاک</button
-        ><button
-          class="hover:text-pink-500 cursor-pointer block w-full md:w-auto text-center"
-        >
-          مکمل غذایی و ورزشی</button
-        ><button
-          class="hover:text-pink-500 cursor-pointer block w-full md:w-auto text-center"
-        >
-          لوازم برقی</button
-        ><button
-          class="hover:text-pink-500 cursor-pointer block w-full md:w-auto text-center"
-        >
-          عطر و اسپری</button
-        ><button
-          class="hover:text-pink-500 cursor-pointer block w-full md:w-auto text-center"
-        >
-          بهداشت شخصی</button
-        ><button
-          class="hover:text-pink-500 cursor-pointer block w-full md:w-auto text-center"
-        >
-          مراقب و زیبایی مو</button
-        ><button
-          class="hover:text-pink-500 cursor-pointer block w-full md:w-auto text-center"
-        >
-          مراقب پوست</button
-        ><button
-          class="hover:text-pink-500 cursor-pointer block w-full md:w-auto text-center"
-        >
-          آرایشی</button
-        ><button
-          class="hover:text-pink-500 cursor-pointer block w-full md:w-auto text-center"
-        >
+        <button class="hover:text-pink-500 cursor-pointer px-3 py-2 text-sm">
+          مجله خانومی
+        </button>
+        <button class="hover:text-pink-500 cursor-pointer px-3 py-2 text-sm">
+          طلا و نقره
+        </button>
+        <button class="hover:text-pink-500 cursor-pointer px-3 py-2 text-sm">
+          کالای دیجیتال
+        </button>
+        <button class="hover:text-pink-500 cursor-pointer px-3 py-2 text-sm">
+          مد و پوشاک
+        </button>
+        <button class="hover:text-pink-500 cursor-pointer px-3 py-2 text-sm">
+          مکمل غذایی و ورزشی
+        </button>
+        <button class="hover:text-pink-500 cursor-pointer px-3 py-2 text-sm">
+          لوازم برقی
+        </button>
+        <button class="hover:text-pink-500 cursor-pointer px-3 py-2 text-sm">
+          عطر و اسپری
+        </button>
+        <button class="hover:text-pink-500 cursor-pointer px-3 py-2 text-sm">
+          بهداشت شخصی
+        </button>
+        <button class="hover:text-pink-500 cursor-pointer px-3 py-2 text-sm">
+          مراقبت و زیبایی مو
+        </button>
+        <button class="hover:text-pink-500 cursor-pointer px-3 py-2 text-sm">
+          مراقبت پوست
+        </button>
+        <button class="hover:text-pink-500 cursor-pointer px-3 py-2 text-sm">
+          آرایشی
+        </button>
+        <button class="hover:text-pink-500 cursor-pointer px-3 py-2 text-sm">
           برندها
         </button>
       </div>
     </nav>
 
-    <section class="w-full px-4 sm:px-6">
+    <!-- محتوای اصلی -->
+    <section
+      class="w-full px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-20 2xl:max-w-[2000px] 2xl:mx-auto"
+    >
       <div class="flex flex-col items-center justify-center mt-10 max-w-full">
-        <button class="w-full flex cursor-pointer mb-8 max-w-3xl">
+        <!-- بنر تبلیغاتی -->
+        <button class="w-full flex cursor-pointer mb-8 max-w-7xl">
           <img
-            class="w-full h-48 sm:h-64 md:h-80 object-cover rounded-lg shadow-md"
+            class="w-full h-48 sm:h-64 md:h-80 lg:h-96 2xl:h-[500px] object-cover rounded-lg shadow-md"
             src="./img/Mikhay.jpeg"
             alt="No Connection"
           />
         </button>
 
-        <button class="w-full flex cursor-pointer mb-8">
+        <button class="w-full flex cursor-pointer mb-8 max-w-8xl">
           <img
-            class="w-full h-40 sm:h-52 md:h-60 object-cover rounded-lg shadow-md"
+            class="w-full h-40 sm:h-52 md:h-60 lg:h-72 2xl:h-80 object-cover rounded-lg shadow-md"
             src="./img/Darman.jpeg"
             alt="No Connection"
           />
         </button>
 
-        <div class="font-bold text-black w-full text-right mb-4">
-          <h1 class="text-lg sm:text-xl md:text-2xl">محصولات ضد جوش</h1>
+        <!-- بخش محصولات ضد جوش -->
+        <div class="font-bold text-black w-full text-right mb-4 max-w-7xl">
+          <h1 class="text-lg sm:text-xl md:text-2xl lg:text-3xl 2xl:text-4xl">
+            محصولات ضد جوش
+          </h1>
         </div>
-        <div class="w-full overflow-x-auto pb-4">
-          <div class="flex flex-nowrap gap-4 py-4 min-w-max">
+        <div class="w-full overflow-x-auto pb-4 max-w-7xl">
+          <div
+            class="flex flex-nowrap gap-4 py-4 min-w-max 2xl:grid 2xl:grid-cols-5 2xl:gap-6 2xl:min-w-0"
+          >
             <button
-              class="border border-gray-200 rounded-lg h-72 sm:h-80 flex flex-col hover:bg-gray-100 cursor-pointer w-56 sm:w-64 flex-shrink-0 transition-all duration-300 shadow-sm hover:shadow-md"
+              class="border border-gray-200 rounded-lg h-72 sm:h-80 lg:h-96 2xl:h-[420px] flex flex-col hover:bg-gray-100 cursor-pointer w-56 sm:w-64 lg:w-72 2xl:w-full flex-shrink-0 transition-all duration-300 shadow-sm hover:shadow-md"
             >
               <img
-                class="rounded-t-lg w-full h-48 sm:h-56 object-cover"
+                class="rounded-t-lg w-full h-48 sm:h-56 lg:h-64 2xl:h-[280px] object-cover"
                 src="./img/Adlita Photo.jpg"
                 alt="No Connection"
               />
               <div class="p-3 flex-1 flex flex-col justify-between">
-                <h1 class="font-thin text-sm sm:text-base text-right leading-6">
+                <h1
+                  class="font-thin text-sm sm:text-base lg:text-lg 2xl:text-xl text-right leading-6"
+                >
                   پنکک ضد جوش
                 </h1>
                 <p
                   class="text-black font-bold flex flex-row-reverse items-center gap-1 justify-end mt-2"
                 >
-                  <span class="text-base sm:text-lg">۴۰۰,۰۰۰</span>
-                  <span class="text-sm sm:text-base">تومان</span>
+                  <span class="text-base sm:text-lg lg:text-xl 2xl:text-2xl"
+                    >۴۰۰,۰۰۰</span
+                  >
+                  <span class="text-sm sm:text-base lg:text-lg 2xl:text-xl"
+                    >تومان</span
+                  >
                 </p>
               </div>
             </button>
 
             <button
-              class="border border-gray-200 rounded-lg h-72 sm:h-80 flex flex-col hover:bg-gray-100 cursor-pointer w-56 sm:w-64 flex-shrink-0 transition-all duration-300 shadow-sm hover:shadow-md"
+              class="border border-gray-200 rounded-lg h-72 sm:h-80 lg:h-96 2xl:h-[420px] flex flex-col hover:bg-gray-100 cursor-pointer w-56 sm:w-64 lg:w-72 2xl:w-full flex-shrink-0 transition-all duration-300 shadow-sm hover:shadow-md"
             >
               <img
-                class="rounded-t-lg w-full h-48 sm:h-56 object-cover"
+                class="rounded-t-lg w-full h-48 sm:h-56 lg:h-64 2xl:h-[280px] object-cover"
                 src="./img/Vanora Photo.jpg"
                 alt="No Connection"
               />
               <div class="p-3 flex-1 flex flex-col justify-between">
-                <h1 class="font-thin text-sm sm:text-base text-right leading-6">
+                <h1
+                  class="font-thin text-sm sm:text-base lg:text-lg 2xl:text-xl text-right leading-6"
+                >
                   Select پالت رژ لب
                 </h1>
                 <p
                   class="text-black font-bold flex flex-row-reverse items-center gap-1 justify-end mt-2"
                 >
-                  <span class="text-base sm:text-lg">۵۹۹,۰۰۰</span>
-                  <span class="text-sm sm:text-base">تومان</span>
+                  <span class="text-base sm:text-lg lg:text-xl 2xl:text-2xl"
+                    >۵۹۹,۰۰۰</span
+                  >
+                  <span class="text-sm sm:text-base lg:text-lg 2xl:text-xl"
+                    >تومان</span
+                  >
                 </p>
               </div>
             </button>
 
             <button
-              class="border border-gray-200 rounded-lg h-72 sm:h-80 flex flex-col hover:bg-gray-100 cursor-pointer w-56 sm:w-64 flex-shrink-0 transition-all duration-300 shadow-sm hover:shadow-md"
+              class="border border-gray-200 rounded-lg h-72 sm:h-80 lg:h-96 2xl:h-[420px] flex flex-col hover:bg-gray-100 cursor-pointer w-56 sm:w-64 lg:w-72 2xl:w-full flex-shrink-0 transition-all duration-300 shadow-sm hover:shadow-md"
             >
               <img
-                class="rounded-t-lg w-full h-48 sm:h-56 object-cover"
+                class="rounded-t-lg w-full h-48 sm:h-56 lg:h-64 2xl:h-[280px] object-cover"
                 src="./img/Super Toch Photo.jpg"
                 alt="No Connection"
               />
               <div class="p-3 flex-1 flex flex-col justify-between">
                 <h1
-                  class="font-thin text-sm sm:text-base text-right leading-6 truncate"
+                  class="font-thin text-sm sm:text-base lg:text-lg 2xl:text-xl text-right leading-6 truncate"
                 >
                   پک دو عددی مداد چشم ضد آب
                 </h1>
                 <p
                   class="text-black font-bold flex flex-row-reverse items-center gap-1 justify-end mt-2"
                 >
-                  <span class="text-base sm:text-lg">۶۷۸,۰۰۰</span>
-                  <span class="text-sm sm:text-base">تومان</span>
+                  <span class="text-base sm:text-lg lg:text-xl 2xl:text-2xl"
+                    >۶۷۸,۰۰۰</span
+                  >
+                  <span class="text-sm sm:text-base lg:text-lg 2xl:text-xl"
+                    >تومان</span
+                  >
                 </p>
               </div>
             </button>
 
             <button
-              class="border border-gray-200 rounded-lg h-72 sm:h-80 flex flex-col hover:bg-gray-100 cursor-pointer w-56 sm:w-64 flex-shrink-0 transition-all duration-300 shadow-sm hover:shadow-md"
+              class="border border-gray-200 rounded-lg h-72 sm:h-80 lg:h-96 2xl:h-[420px] flex flex-col hover:bg-gray-100 cursor-pointer w-56 sm:w-64 lg:w-72 2xl:w-full flex-shrink-0 transition-all duration-300 shadow-sm hover:shadow-md"
             >
               <img
-                class="rounded-t-lg w-full h-48 sm:h-56 object-cover"
+                class="rounded-t-lg w-full h-48 sm:h-56 lg:h-64 2xl:h-[280px] object-cover"
                 src="./img/Beladona Photo.jpg"
                 alt="No Connection"
               />
               <div class="p-3 flex-1 flex flex-col justify-between">
-                <h1 class="font-thin text-sm sm:text-base text-right leading-6">
+                <h1
+                  class="font-thin text-sm sm:text-base lg:text-lg 2xl:text-xl text-right leading-6"
+                >
                   رژگونه ضد جوش
                 </h1>
                 <p
                   class="text-black font-bold flex flex-row-reverse items-center gap-1 justify-end mt-2"
                 >
-                  <span class="text-base sm:text-lg">۹۱۸,۰۰۰</span>
-                  <span class="text-sm sm:text-base">تومان</span>
+                  <span class="text-base sm:text-lg lg:text-xl 2xl:text-2xl"
+                    >۹۱۸,۰۰۰</span
+                  >
+                  <span class="text-sm sm:text-base lg:text-lg 2xl:text-xl"
+                    >تومان</span
+                  >
                 </p>
               </div>
             </button>
 
             <button
-              class="border border-gray-200 rounded-lg h-72 sm:h-80 flex flex-col hover:bg-gray-100 cursor-pointer w-56 sm:w-64 flex-shrink-0 transition-all duration-300 shadow-sm hover:shadow-md"
+              class="border border-gray-200 rounded-lg h-72 sm:h-80 lg:h-96 2xl:h-[420px] flex flex-col hover:bg-gray-100 cursor-pointer w-56 sm:w-64 lg:w-72 2xl:w-full flex-shrink-0 transition-all duration-300 shadow-sm hover:shadow-md"
             >
               <img
-                class="rounded-t-lg w-full h-48 sm:h-56 object-cover"
+                class="rounded-t-lg w-full h-48 sm:h-56 lg:h-64 2xl:h-[280px] object-cover"
                 src="./img/Lido Photo.jpg"
                 alt="No Connection"
               />
               <div class="p-3 flex-1 flex flex-col justify-between">
-                <h1 class="font-thin text-sm sm:text-base text-right leading-6">
+                <h1
+                  class="font-thin text-sm sm:text-base lg:text-lg 2xl:text-xl text-right leading-6"
+                >
                   Kiss Able رژ لب مایع
                 </h1>
                 <p
                   class="text-black font-bold flex flex-row-reverse items-center gap-1 justify-end mt-2"
                 >
-                  <span class="text-base sm:text-lg">۷۷۰,۰۰۰</span>
-                  <span class="text-sm sm:text-base">تومان</span>
+                  <span class="text-base sm:text-lg lg:text-xl 2xl:text-2xl"
+                    >۷۷۰,۰۰۰</span
+                  >
+                  <span class="text-sm sm:text-base lg:text-lg 2xl:text-xl"
+                    >تومان</span
+                  >
                 </p>
               </div>
             </button>
           </div>
         </div>
 
-        <button class="w-full flex cursor-pointer my-8">
+        <!-- بنر تبلیغاتی -->
+        <button class="w-full flex cursor-pointer my-8 max-w-8xl">
           <img
-            class="w-full h-40 sm:h-52 md:h-60 object-cover rounded-lg shadow-md"
+            class="w-full h-40 sm:h-52 md:h-60 lg:h-72 2xl:h-80 object-cover rounded-lg shadow-md"
             src="./img/Chare.jpeg"
             alt="No Connection"
           />
         </button>
 
-        <div class="font-bold text-black w-full text-right mb-4">
-          <h1 class="text-lg sm:text-xl md:text-2xl">محصولات آبرسان</h1>
+        <!-- بخش محصولات آبرسان -->
+        <div class="font-bold text-black w-full text-right mb-4 max-w-7xl">
+          <h1 class="text-lg sm:text-xl md:text-2xl lg:text-3xl 2xl:text-4xl">
+            محصولات آبرسان
+          </h1>
         </div>
-        <div class="w-full overflow-x-auto pb-4">
-          <div class="flex flex-nowrap gap-4 py-4 min-w-max">
+        <div class="w-full overflow-x-auto pb-4 max-w-7xl">
+          <div
+            class="flex flex-nowrap gap-4 py-4 min-w-max 2xl:grid 2xl:grid-cols-5 2xl:gap-6 2xl:min-w-0"
+          >
             <button
-              class="border border-gray-200 rounded-lg h-72 sm:h-80 flex flex-col hover:bg-gray-100 cursor-pointer w-56 sm:w-64 flex-shrink-0 transition-all duration-300 shadow-sm hover:shadow-md"
+              class="border border-gray-200 rounded-lg h-72 sm:h-80 lg:h-96 2xl:h-[420px] flex flex-col hover:bg-gray-100 cursor-pointer w-56 sm:w-64 lg:w-72 2xl:w-full flex-shrink-0 transition-all duration-300 shadow-sm hover:shadow-md"
             >
               <img
-                class="rounded-t-lg w-full h-48 sm:h-56 object-cover"
+                class="rounded-t-lg w-full h-48 sm:h-56 lg:h-64 2xl:h-[280px] object-cover"
                 src="./img/Adlita Photo.jpg"
                 alt="No Connection"
               />
               <div class="p-3 flex-1 flex flex-col justify-between">
-                <h1 class="font-thin text-sm sm:text-base text-right leading-6">
+                <h1
+                  class="font-thin text-sm sm:text-base lg:text-lg 2xl:text-xl text-right leading-6"
+                >
                   سرم ویتامین C آبرسان
                 </h1>
                 <p
                   class="text-black font-bold flex flex-row-reverse items-center gap-1 justify-end mt-2"
                 >
-                  <span class="text-base sm:text-lg">۳۲۰,۰۰۰</span>
-                  <span class="text-sm sm:text-base">تومان</span>
+                  <span class="text-base sm:text-lg lg:text-xl 2xl:text-2xl"
+                    >۳۲۰,۰۰۰</span
+                  >
+                  <span class="text-sm sm:text-base lg:text-lg 2xl:text-xl"
+                    >تومان</span
+                  >
                 </p>
               </div>
             </button>
 
             <button
-              class="border border-gray-200 rounded-lg h-72 sm:h-80 flex flex-col hover:bg-gray-100 cursor-pointer w-56 sm:w-64 flex-shrink-0 transition-all duration-300 shadow-sm hover:shadow-md"
+              class="border border-gray-200 rounded-lg h-72 sm:h-80 lg:h-96 2xl:h-[420px] flex flex-col hover:bg-gray-100 cursor-pointer w-56 sm:w-64 lg:w-72 2xl:w-full flex-shrink-0 transition-all duration-300 shadow-sm hover:shadow-md"
             >
               <img
-                class="rounded-t-lg w-full h-48 sm:h-56 object-cover"
+                class="rounded-t-lg w-full h-48 sm:h-56 lg:h-64 2xl:h-[280px] object-cover"
                 src="./img/Vanora Photo.jpg"
                 alt="No Connection"
               />
               <div class="p-3 flex-1 flex flex-col justify-between">
-                <h1 class="font-thin text-sm sm:text-base text-right leading-6">
+                <h1
+                  class="font-thin text-sm sm:text-base lg:text-lg 2xl:text-xl text-right leading-6"
+                >
                   سرم هیالورونیک اسید
                 </h1>
                 <p
                   class="text-black font-bold flex flex-row-reverse items-center gap-1 justify-end mt-2"
                 >
-                  <span class="text-base sm:text-lg">۴۵۰,۰۰۰</span>
-                  <span class="text-sm sm:text-base">تومان</span>
+                  <span class="text-base sm:text-lg lg:text-xl 2xl:text-2xl"
+                    >۴۵۰,۰۰۰</span
+                  >
+                  <span class="text-sm sm:text-base lg:text-lg 2xl:text-xl"
+                    >تومان</span
+                  >
                 </p>
               </div>
             </button>
 
             <button
-              class="border border-gray-200 rounded-lg h-72 sm:h-80 flex flex-col hover:bg-gray-100 cursor-pointer w-56 sm:w-64 flex-shrink-0 transition-all duration-300 shadow-sm hover:shadow-md"
+              class="border border-gray-200 rounded-lg h-72 sm:h-80 lg:h-96 2xl:h-[420px] flex flex-col hover:bg-gray-100 cursor-pointer w-56 sm:w-64 lg:w-72 2xl:w-full flex-shrink-0 transition-all duration-300 shadow-sm hover:shadow-md"
             >
               <img
-                class="rounded-t-lg w-full h-48 sm:h-56 object-cover"
+                class="rounded-t-lg w-full h-48 sm:h-56 lg:h-64 2xl:h-[280px] object-cover"
                 src="./img/Super Toch Photo.jpg"
                 alt="No Connection"
               />
               <div class="p-3 flex-1 flex flex-col justify-between">
-                <h1 class="font-thin text-sm sm:text-base text-right leading-6">
+                <h1
+                  class="font-thin text-sm sm:text-base lg:text-lg 2xl:text-xl text-right leading-6"
+                >
                   سرم آبرسان قوی
                 </h1>
                 <p
                   class="text-black font-bold flex flex-row-reverse items-center gap-1 justify-end mt-2"
                 >
-                  <span class="text-base sm:text-lg">۵۲۰,۰۰۰</span>
-                  <span class="text-sm sm:text-base">تومان</span>
+                  <span class="text-base sm:text-lg lg:text-xl 2xl:text-2xl"
+                    >۵۲۰,۰۰۰</span
+                  >
+                  <span class="text-sm sm:text-base lg:text-lg 2xl:text-xl"
+                    >تومان</span
+                  >
                 </p>
               </div>
             </button>
 
             <button
-              class="border border-gray-200 rounded-lg h-72 sm:h-80 flex flex-col hover:bg-gray-100 cursor-pointer w-56 sm:w-64 flex-shrink-0 transition-all duration-300 shadow-sm hover:shadow-md"
+              class="border border-gray-200 rounded-lg h-72 sm:h-80 lg:h-96 2xl:h-[420px] flex flex-col hover:bg-gray-100 cursor-pointer w-56 sm:w-64 lg:w-72 2xl:w-full flex-shrink-0 transition-all duration-300 shadow-sm hover:shadow-md"
             >
               <img
-                class="rounded-t-lg w-full h-48 sm:h-56 object-cover"
+                class="rounded-t-lg w-full h-48 sm:h-56 lg:h-64 2xl:h-[280px] object-cover"
                 src="./img/Beladona Photo.jpg"
                 alt="No Connection"
               />
               <div class="p-3 flex-1 flex flex-col justify-between">
-                <h1 class="font-thin text-sm sm:text-base text-right leading-6">
+                <h1
+                  class="font-thin text-sm sm:text-base lg:text-lg 2xl:text-xl text-right leading-6"
+                >
                   ژل آلوئه ورا
                 </h1>
                 <p
                   class="text-black font-bold flex flex-row-reverse items-center gap-1 justify-end mt-2"
                 >
-                  <span class="text-base sm:text-lg">۲۸۰,۰۰۰</span>
-                  <span class="text-sm sm:text-base">تومان</span>
+                  <span class="text-base sm:text-lg lg:text-xl 2xl:text-2xl"
+                    >۲۸۰,۰۰۰</span
+                  >
+                  <span class="text-sm sm:text-base lg:text-lg 2xl:text-xl"
+                    >تومان</span
+                  >
                 </p>
               </div>
             </button>
 
             <button
-              class="border border-gray-200 rounded-lg h-72 sm:h-80 flex flex-col hover:bg-gray-100 cursor-pointer w-56 sm:w-64 flex-shrink-0 transition-all duration-300 shadow-sm hover:shadow-md"
+              class="border border-gray-200 rounded-lg h-72 sm:h-80 lg:h-96 2xl:h-[420px] flex flex-col hover:bg-gray-100 cursor-pointer w-56 sm:w-64 lg:w-72 2xl:w-full flex-shrink-0 transition-all duration-300 shadow-sm hover:shadow-md"
             >
               <img
-                class="rounded-t-lg w-full h-48 sm:h-56 object-cover"
+                class="rounded-t-lg w-full h-48 sm:h-56 lg:h-64 2xl:h-[280px] object-cover"
                 src="./img/Lido Photo.jpg"
                 alt="No Connection"
               />
               <div class="p-3 flex-1 flex flex-col justify-between">
-                <h1 class="font-thin text-sm sm:text-base text-right leading-6">
+                <h1
+                  class="font-thin text-sm sm:text-base lg:text-lg 2xl:text-xl text-right leading-6"
+                >
                   سرم آبرسان شب
                 </h1>
                 <p
                   class="text-black font-bold flex flex-row-reverse items-center gap-1 justify-end mt-2"
                 >
-                  <span class="text-base sm:text-lg">۳۸۰,۰۰۰</span>
-                  <span class="text-sm sm:text-base">تومان</span>
+                  <span class="text-base sm:text-lg lg:text-xl 2xl:text-2xl"
+                    >۳۸۰,۰۰۰</span
+                  >
+                  <span class="text-sm sm:text-base lg:text-lg 2xl:text-xl"
+                    >تومان</span
+                  >
                 </p>
               </div>
             </button>
           </div>
         </div>
 
-        <button class="w-full flex cursor-pointer my-8">
+        <!-- بنر تبلیغاتی -->
+        <button class="w-full flex cursor-pointer my-8 max-w-8xl">
           <img
-            class="w-full h-40 sm:h-52 md:h-60 object-cover rounded-lg shadow-md"
+            class="w-full h-40 sm:h-52 md:h-60 lg:h-72 2xl:h-80 object-cover rounded-lg shadow-md"
             src="./img/Chorook.jpeg"
             alt="No Connection"
           />
         </button>
 
-        <div class="font-bold text-black w-full text-right mb-4">
-          <h1 class="text-lg sm:text-xl md:text-2xl">محصولات جوانساز</h1>
+        <!-- بخش محصولات جوانساز -->
+        <div class="font-bold text-black w-full text-right mb-4 max-w-7xl">
+          <h1 class="text-lg sm:text-xl md:text-2xl lg:text-3xl 2xl:text-4xl">
+            محصولات جوانساز
+          </h1>
         </div>
-        <div class="w-full overflow-x-auto pb-4">
-          <div class="flex flex-nowrap gap-4 py-4 min-w-max">
+        <div class="w-full overflow-x-auto pb-4 max-w-7xl">
+          <div
+            class="flex flex-nowrap gap-4 py-4 min-w-max 2xl:grid 2xl:grid-cols-5 2xl:gap-6 2xl:min-w-0"
+          >
             <button
-              class="border border-gray-200 rounded-lg h-72 sm:h-80 flex flex-col hover:bg-gray-100 cursor-pointer w-56 sm:w-64 flex-shrink-0 transition-all duration-300 shadow-sm hover:shadow-md"
+              class="border border-gray-200 rounded-lg h-72 sm:h-80 lg:h-96 2xl:h-[420px] flex flex-col hover:bg-gray-100 cursor-pointer w-56 sm:w-64 lg:w-72 2xl:w-full flex-shrink-0 transition-all duration-300 shadow-sm hover:shadow-md"
             >
               <img
-                class="rounded-t-lg w-full h-48 sm:h-56 object-cover"
+                class="rounded-t-lg w-full h-48 sm:h-56 lg:h-64 2xl:h-[280px] object-cover"
                 src="./img/Adlita Photo.jpg"
                 alt="No Connection"
               />
               <div class="p-3 flex-1 flex flex-col justify-between">
-                <h1 class="font-thin text-sm sm:text-base text-right leading-6">
+                <h1
+                  class="font-thin text-sm sm:text-base lg:text-lg 2xl:text-xl text-right leading-6"
+                >
                   سرم رتینول
                 </h1>
                 <p
                   class="text-black font-bold flex flex-row-reverse items-center gap-1 justify-end mt-2"
                 >
-                  <span class="text-base sm:text-lg">۶۲۰,۰۰۰</span>
-                  <span class="text-sm sm:text-base">تومان</span>
+                  <span class="text-base sm:text-lg lg:text-xl 2xl:text-2xl"
+                    >۶۲۰,۰۰۰</span
+                  >
+                  <span class="text-sm sm:text-base lg:text-lg 2xl:text-xl"
+                    >تومان</span
+                  >
                 </p>
               </div>
             </button>
 
             <button
-              class="border border-gray-200 rounded-lg h-72 sm:h-80 flex flex-col hover:bg-gray-100 cursor-pointer w-56 sm:w-64 flex-shrink-0 transition-all duration-300 shadow-sm hover:shadow-md"
+              class="border border-gray-200 rounded-lg h-72 sm:h-80 lg:h-96 2xl:h-[420px] flex flex-col hover:bg-gray-100 cursor-pointer w-56 sm:w-64 lg:w-72 2xl:w-full flex-shrink-0 transition-all duration-300 shadow-sm hover:shadow-md"
             >
               <img
-                class="rounded-t-lg w-full h-48 sm:h-56 object-cover"
+                class="rounded-t-lg w-full h-48 sm:h-56 lg:h-64 2xl:h-[280px] object-cover"
                 src="./img/Vanora Photo.jpg"
                 alt="No Connection"
               />
               <div class="p-3 flex-1 flex flex-col justify-between">
-                <h1 class="font-thin text-sm sm:text-base text-right leading-6">
+                <h1
+                  class="font-thin text-sm sm:text-base lg:text-lg 2xl:text-xl text-right leading-6"
+                >
                   سرم کلاژن
                 </h1>
                 <p
                   class="text-black font-bold flex flex-row-reverse items-center gap-1 justify-end mt-2"
                 >
-                  <span class="text-base sm:text-lg">۵۵۰,۰۰۰</span>
-                  <span class="text-sm sm:text-base">تومان</span>
+                  <span class="text-base sm:text-lg lg:text-xl 2xl:text-2xl"
+                    >۵۵۰,۰۰۰</span
+                  >
+                  <span class="text-sm sm:text-base lg:text-lg 2xl:text-xl"
+                    >تومان</span
+                  >
                 </p>
               </div>
             </button>
 
             <button
-              class="border border-gray-200 rounded-lg h-72 sm:h-80 flex flex-col hover:bg-gray-100 cursor-pointer w-56 sm:w-64 flex-shrink-0 transition-all duration-300 shadow-sm hover:shadow-md"
+              class="border border-gray-200 rounded-lg h-72 sm:h-80 lg:h-96 2xl:h-[420px] flex flex-col hover:bg-gray-100 cursor-pointer w-56 sm:w-64 lg:w-72 2xl:w-full flex-shrink-0 transition-all duration-300 shadow-sm hover:shadow-md"
             >
               <img
-                class="rounded-t-lg w-full h-48 sm:h-56 object-cover"
+                class="rounded-t-lg w-full h-48 sm:h-56 lg:h-64 2xl:h-[280px] object-cover"
                 src="./img/Super Toch Photo.jpg"
                 alt="No Connection"
               />
               <div class="p-3 flex-1 flex flex-col justify-between">
-                <h1 class="font-thin text-sm sm:text-base text-right leading-6">
+                <h1
+                  class="font-thin text-sm sm:text-base lg:text-lg 2xl:text-xl text-right leading-6"
+                >
                   سرم ضد چروک
                 </h1>
                 <p
                   class="text-black font-bold flex flex-row-reverse items-center gap-1 justify-end mt-2"
                 >
-                  <span class="text-base sm:text-lg">۷۲۰,۰۰۰</span>
-                  <span class="text-sm sm:text-base">تومان</span>
+                  <span class="text-base sm:text-lg lg:text-xl 2xl:text-2xl"
+                    >۷۲۰,۰۰۰</span
+                  >
+                  <span class="text-sm sm:text-base lg:text-lg 2xl:text-xl"
+                    >تومان</span
+                  >
                 </p>
               </div>
             </button>
 
             <button
-              class="border border-gray-200 rounded-lg h-72 sm:h-80 flex flex-col hover:bg-gray-100 cursor-pointer w-56 sm:w-64 flex-shrink-0 transition-all duration-300 shadow-sm hover:shadow-md"
+              class="border border-gray-200 rounded-lg h-72 sm:h-80 lg:h-96 2xl:h-[420px] flex flex-col hover:bg-gray-100 cursor-pointer w-56 sm:w-64 lg:w-72 2xl:w-full flex-shrink-0 transition-all duration-300 shadow-sm hover:shadow-md"
             >
               <img
-                class="rounded-t-lg w-full h-48 sm:h-56 object-cover"
+                class="rounded-t-lg w-full h-48 sm:h-56 lg:h-64 2xl:h-[280px] object-cover"
                 src="./img/Beladona Photo.jpg"
                 alt="No Connection"
               />
               <div class="p-3 flex-1 flex flex-col justify-between">
-                <h1 class="font-thin text-sm sm:text-base text-right leading-6">
+                <h1
+                  class="font-thin text-sm sm:text-base lg:text-lg 2xl:text-xl text-right leading-6"
+                >
                   سرم ویتامین A
                 </h1>
                 <p
                   class="text-black font-bold flex flex-row-reverse items-center gap-1 justify-end mt-2"
                 >
-                  <span class="text-base sm:text-lg">۴۸۰,۰۰۰</span>
-                  <span class="text-sm sm:text-base">تومان</span>
+                  <span class="text-base sm:text-lg lg:text-xl 2xl:text-2xl"
+                    >۴۸۰,۰۰۰</span
+                  >
+                  <span class="text-sm sm:text-base lg:text-lg 2xl:text-xl"
+                    >تومان</span
+                  >
                 </p>
               </div>
             </button>
 
             <button
-              class="border border-gray-200 rounded-lg h-72 sm:h-80 flex flex-col hover:bg-gray-100 cursor-pointer w-56 sm:w-64 flex-shrink-0 transition-all duration-300 shadow-sm hover:shadow-md"
+              class="border border-gray-200 rounded-lg h-72 sm:h-80 lg:h-96 2xl:h-[420px] flex flex-col hover:bg-gray-100 cursor-pointer w-56 sm:w-64 lg:w-72 2xl:w-full flex-shrink-0 transition-all duration-300 shadow-sm hover:shadow-md"
             >
               <img
-                class="rounded-t-lg w-full h-48 sm:h-56 object-cover"
+                class="rounded-t-lg w-full h-48 sm:h-56 lg:h-64 2xl:h-[280px] object-cover"
                 src="./img/Lido Photo.jpg"
                 alt="No Connection"
               />
               <div class="p-3 flex-1 flex flex-col justify-between">
-                <h1 class="font-thin text-sm sm:text-base text-right leading-6">
+                <h1
+                  class="font-thin text-sm sm:text-base lg:text-lg 2xl:text-xl text-right leading-6"
+                >
                   سرم جوانساز شب
                 </h1>
                 <p
                   class="text-black font-bold flex flex-row-reverse items-center gap-1 justify-end mt-2"
                 >
-                  <span class="text-base sm:text-lg">۶۸۰,۰۰۰</span>
-                  <span class="text-sm sm:text-base">تومان</span>
+                  <span class="text-base sm:text-lg lg:text-xl 2xl:text-2xl"
+                    >۶۸۰,۰۰۰</span
+                  >
+                  <span class="text-sm sm:text-base lg:text-lg 2xl:text-xl"
+                    >تومان</span
+                  >
                 </p>
               </div>
             </button>
           </div>
         </div>
 
-        <button class="w-full flex cursor-pointer my-8">
+        <!-- بنر تبلیغاتی -->
+        <button class="w-full flex cursor-pointer my-8 max-w-8xl">
           <img
-            class="w-full h-40 sm:h-52 md:h-60 object-cover rounded-lg shadow-md"
+            class="w-full h-40 sm:h-52 md:h-60 lg:h-72 2xl:h-80 object-cover rounded-lg shadow-md"
             src="./img/Poost Bedoone Lack.jpeg"
             alt="No Connection"
           />
         </button>
 
-        <div class="font-bold text-black w-full text-right mb-4">
-          <h1 class="text-lg sm:text-xl md:text-2xl">ده سرم برتر</h1>
+        <!-- بخش ده سرم برتر -->
+        <div class="font-bold text-black w-full text-right mb-4 max-w-7xl">
+          <h1 class="text-lg sm:text-xl md:text-2xl lg:text-3xl 2xl:text-4xl">
+            ده سرم برتر
+          </h1>
         </div>
-        <div class="w-full overflow-x-auto pb-4">
-          <div class="flex flex-nowrap gap-4 py-4 min-w-max">
+        <div class="w-full overflow-x-auto pb-4 max-w-7xl">
+          <div
+            class="flex flex-nowrap gap-4 py-4 min-w-max 2xl:grid 2xl:grid-cols-5 2xl:gap-6 2xl:min-w-0"
+          >
             <button
-              class="border border-gray-200 rounded-lg h-72 sm:h-80 flex flex-col hover:bg-gray-100 cursor-pointer w-56 sm:w-64 flex-shrink-0 transition-all duration-300 shadow-sm hover:shadow-md"
+              class="border border-gray-200 rounded-lg h-72 sm:h-80 lg:h-96 2xl:h-[420px] flex flex-col hover:bg-gray-100 cursor-pointer w-56 sm:w-64 lg:w-72 2xl:w-full flex-shrink-0 transition-all duration-300 shadow-sm hover:shadow-md"
             >
               <img
-                class="rounded-t-lg w-full h-48 sm:h-56 object-cover"
+                class="rounded-t-lg w-full h-48 sm:h-56 lg:h-64 2xl:h-[280px] object-cover"
                 src="./img/Adlita Photo.jpg"
                 alt="No Connection"
               />
               <div class="p-3 flex-1 flex flex-col justify-between">
-                <h1 class="font-thin text-sm sm:text-base text-right leading-6">
+                <h1
+                  class="font-thin text-sm sm:text-base lg:text-lg 2xl:text-xl text-right leading-6"
+                >
                   سرم ویتامین C برتر
                 </h1>
                 <p
                   class="text-black font-bold flex flex-row-reverse items-center gap-1 justify-end mt-2"
                 >
-                  <span class="text-base sm:text-lg">۸۲۰,۰۰۰</span>
-                  <span class="text-sm sm:text-base">تومان</span>
+                  <span class="text-base sm:text-lg lg:text-xl 2xl:text-2xl"
+                    >۸۲۰,۰۰۰</span
+                  >
+                  <span class="text-sm sm:text-base lg:text-lg 2xl:text-xl"
+                    >تومان</span
+                  >
                 </p>
               </div>
             </button>
 
             <button
-              class="border border-gray-200 rounded-lg h-72 sm:h-80 flex flex-col hover:bg-gray-100 cursor-pointer w-56 sm:w-64 flex-shrink-0 transition-all duration-300 shadow-sm hover:shadow-md"
+              class="border border-gray-200 rounded-lg h-72 sm:h-80 lg:h-96 2xl:h-[420px] flex flex-col hover:bg-gray-100 cursor-pointer w-56 sm:w-64 lg:w-72 2xl:w-full flex-shrink-0 transition-all duration-300 shadow-sm hover:shadow-md"
             >
               <img
-                class="rounded-t-lg w-full h-48 sm:h-56 object-cover"
+                class="rounded-t-lg w-full h-48 sm:h-56 lg:h-64 2xl:h-[280px] object-cover"
                 src="./img/Vanora Photo.jpg"
                 alt="No Connection"
               />
               <div class="p-3 flex-1 flex flex-col justify-between">
-                <h1 class="font-thin text-sm sm:text-base text-right leading-6">
+                <h1
+                  class="font-thin text-sm sm:text-base lg:text-lg 2xl:text-xl text-right leading-6"
+                >
                   سرم نیاسینامید
                 </h1>
                 <p
                   class="text-black font-bold flex flex-row-reverse items-center gap-1 justify-end mt-2"
                 >
-                  <span class="text-base sm:text-lg">۷۵۰,۰۰۰</span>
-                  <span class="text-sm sm:text-base">تومان</span>
+                  <span class="text-base sm:text-lg lg:text-xl 2xl:text-2xl"
+                    >۷۵۰,۰۰۰</span
+                  >
+                  <span class="text-sm sm:text-base lg:text-lg 2xl:text-xl"
+                    >تومان</span
+                  >
                 </p>
               </div>
             </button>
 
             <button
-              class="border border-gray-200 rounded-lg h-72 sm:h-80 flex flex-col hover:bg-gray-100 cursor-pointer w-56 sm:w-64 flex-shrink-0 transition-all duration-300 shadow-sm hover:shadow-md"
+              class="border border-gray-200 rounded-lg h-72 sm:h-80 lg:h-96 2xl:h-[420px] flex flex-col hover:bg-gray-100 cursor-pointer w-56 sm:w-64 lg:w-72 2xl:w-full flex-shrink-0 transition-all duration-300 shadow-sm hover:shadow-md"
             >
               <img
-                class="rounded-t-lg w-full h-48 sm:h-56 object-cover"
+                class="rounded-t-lg w-full h-48 sm:h-56 lg:h-64 2xl:h-[280px] object-cover"
                 src="./img/Super Toch Photo.jpg"
                 alt="No Connection"
               />
               <div class="p-3 flex-1 flex flex-col justify-between">
-                <h1 class="font-thin text-sm sm:text-base text-right leading-6">
+                <h1
+                  class="font-thin text-sm sm:text-base lg:text-lg 2xl:text-xl text-right leading-6"
+                >
                   سرم اسید سالیسیلیک
                 </h1>
                 <p
                   class="text-black font-bold flex flex-row-reverse items-center gap-1 justify-end mt-2"
                 >
-                  <span class="text-base sm:text-lg">۶۸۰,۰۰۰</span>
-                  <span class="text-sm sm:text-base">تومان</span>
+                  <span class="text-base sm:text-lg lg:text-xl 2xl:text-2xl"
+                    >۶۸۰,۰۰۰</span
+                  >
+                  <span class="text-sm sm:text-base lg:text-lg 2xl:text-xl"
+                    >تومان</span
+                  >
                 </p>
               </div>
             </button>
 
             <button
-              class="border border-gray-200 rounded-lg h-72 sm:h-80 flex flex-col hover:bg-gray-100 cursor-pointer w-56 sm:w-64 flex-shrink-0 transition-all duration-300 shadow-sm hover:shadow-md"
+              class="border border-gray-200 rounded-lg h-72 sm:h-80 lg:h-96 2xl:h-[420px] flex flex-col hover:bg-gray-100 cursor-pointer w-56 sm:w-64 lg:w-72 2xl:w-full flex-shrink-0 transition-all duration-300 shadow-sm hover:shadow-md"
             >
               <img
-                class="rounded-t-lg w-full h-48 sm:h-56 object-cover"
+                class="rounded-t-lg w-full h-48 sm:h-56 lg:h-64 2xl:h-[280px] object-cover"
                 src="./img/Beladona Photo.jpg"
                 alt="No Connection"
               />
               <div class="p-3 flex-1 flex flex-col justify-between">
-                <h1 class="font-thin text-sm sm:text-base text-right leading-6">
+                <h1
+                  class="font-thin text-sm sm:text-base lg:text-lg 2xl:text-xl text-right leading-6"
+                >
                   سرم آبرسان قوی
                 </h1>
                 <p
                   class="text-black font-bold flex flex-row-reverse items-center gap-1 justify-end mt-2"
                 >
-                  <span class="text-base sm:text-lg">۵۹۰,۰۰۰</span>
-                  <span class="text-sm sm:text-base">تومان</span>
+                  <span class="text-base sm:text-lg lg:text-xl 2xl:text-2xl"
+                    >۵۹۰,۰۰۰</span
+                  >
+                  <span class="text-sm sm:text-base lg:text-lg 2xl:text-xl"
+                    >تومان</span
+                  >
                 </p>
               </div>
             </button>
 
             <button
-              class="border border-gray-200 rounded-lg h-72 sm:h-80 flex flex-col hover:bg-gray-100 cursor-pointer w-56 sm:w-64 flex-shrink-0 transition-all duration-300 shadow-sm hover:shadow-md"
+              class="border border-gray-200 rounded-lg h-72 sm:h-80 lg:h-96 2xl:h-[420px] flex flex-col hover:bg-gray-100 cursor-pointer w-56 sm:w-64 lg:w-72 2xl:w-full flex-shrink-0 transition-all duration-300 shadow-sm hover:shadow-md"
             >
               <img
-                class="rounded-t-lg w-full h-48 sm:h-56 object-cover"
+                class="rounded-t-lg w-full h-48 sm:h-56 lg:h-64 2xl:h-[280px] object-cover"
                 src="./img/Lido Photo.jpg"
                 alt="No Connection"
               />
               <div class="p-3 flex-1 flex flex-col justify-between">
-                <h1 class="font-thin text-sm sm:text-base text-right leading-6">
+                <h1
+                  class="font-thin text-sm sm:text-base lg:text-lg 2xl:text-xl text-right leading-6"
+                >
                   سرم آنتی اکسیدان
                 </h1>
                 <p
                   class="text-black font-bold flex flex-row-reverse items-center gap-1 justify-end mt-2"
                 >
-                  <span class="text-base sm:text-lg">۷۱۰,۰۰۰</span>
-                  <span class="text-sm sm:text-base">تومان</span>
+                  <span class="text-base sm:text-lg lg:text-xl 2xl:text-2xl"
+                    >۷۱۰,۰۰۰</span
+                  >
+                  <span class="text-sm sm:text-base lg:text-lg 2xl:text-xl"
+                    >تومان</span
+                  >
                 </p>
               </div>
             </button>
           </div>
         </div>
 
-        <div class="font-bold text-black w-full text-right mb-4">
-          <h1 class="text-lg sm:text-xl md:text-2xl">محصولات ضدلک</h1>
+        <!-- بخش محصولات ضدلک -->
+        <div class="font-bold text-black w-full text-right mb-4 max-w-7xl">
+          <h1 class="text-lg sm:text-xl md:text-2xl lg:text-3xl 2xl:text-4xl">
+            محصولات ضدلک
+          </h1>
         </div>
-        <div class="w-full overflow-x-auto pb-4">
-          <div class="flex flex-nowrap gap-4 py-4 min-w-max">
+        <div class="w-full overflow-x-auto pb-4 max-w-7xl">
+          <div
+            class="flex flex-nowrap gap-4 py-4 min-w-max 2xl:grid 2xl:grid-cols-5 2xl:gap-6 2xl:min-w-0"
+          >
             <button
-              class="border border-gray-200 rounded-lg h-72 sm:h-80 flex flex-col hover:bg-gray-100 cursor-pointer w-56 sm:w-64 flex-shrink-0 transition-all duration-300 shadow-sm hover:shadow-md"
+              class="border border-gray-200 rounded-lg h-72 sm:h-80 lg:h-96 2xl:h-[420px] flex flex-col hover:bg-gray-100 cursor-pointer w-56 sm:w-64 lg:w-72 2xl:w-full flex-shrink-0 transition-all duration-300 shadow-sm hover:shadow-md"
             >
               <img
-                class="rounded-t-lg w-full h-48 sm:h-56 object-cover"
+                class="rounded-t-lg w-full h-48 sm:h-56 lg:h-64 2xl:h-[280px] object-cover"
                 src="./img/Adlita Photo.jpg"
                 alt="No Connection"
               />
               <div class="p-3 flex-1 flex flex-col justify-between">
-                <h1 class="font-thin text-sm sm:text-base text-right leading-6">
+                <h1
+                  class="font-thin text-sm sm:text-base lg:text-lg 2xl:text-xl text-right leading-6"
+                >
                   سرم ضدلک ویتامین C
                 </h1>
                 <p
                   class="text-black font-bold flex flex-row-reverse items-center gap-1 justify-end mt-2"
                 >
-                  <span class="text-base sm:text-lg">۵۲۰,۰۰۰</span>
-                  <span class="text-sm sm:text-base">تومان</span>
+                  <span class="text-base sm:text-lg lg:text-xl 2xl:text-2xl"
+                    >۵۲۰,۰۰۰</span
+                  >
+                  <span class="text-sm sm:text-base lg:text-lg 2xl:text-xl"
+                    >تومان</span
+                  >
                 </p>
               </div>
             </button>
 
             <button
-              class="border border-gray-200 rounded-lg h-72 sm:h-80 flex flex-col hover:bg-gray-100 cursor-pointer w-56 sm:w-64 flex-shrink-0 transition-all duration-300 shadow-sm hover:shadow-md"
+              class="border border-gray-200 rounded-lg h-72 sm:h-80 lg:h-96 2xl:h-[420px] flex flex-col hover:bg-gray-100 cursor-pointer w-56 sm:w-64 lg:w-72 2xl:w-full flex-shrink-0 transition-all duration-300 shadow-sm hover:shadow-md"
             >
               <img
-                class="rounded-t-lg w-full h-48 sm:h-56 object-cover"
+                class="rounded-t-lg w-full h-48 sm:h-56 lg:h-64 2xl:h-[280px] object-cover"
                 src="./img/Vanora Photo.jpg"
                 alt="No Connection"
               />
               <div class="p-3 flex-1 flex flex-col justify-between">
-                <h1 class="font-thin text-sm sm:text-base text-right leading-6">
+                <h1
+                  class="font-thin text-sm sm:text-base lg:text-lg 2xl:text-xl text-right leading-6"
+                >
                   سرم روشن کننده
                 </h1>
                 <p
                   class="text-black font-bold flex flex-row-reverse items-center gap-1 justify-end mt-2"
                 >
-                  <span class="text-base sm:text-lg">۶۳۰,۰۰۰</span>
-                  <span class="text-sm sm:text-base">تومان</span>
+                  <span class="text-base sm:text-lg lg:text-xl 2xl:text-2xl"
+                    >۶۳۰,۰۰۰</span
+                  >
+                  <span class="text-sm sm:text-base lg:text-lg 2xl:text-xl"
+                    >تومان</span
+                  >
                 </p>
               </div>
             </button>
 
             <button
-              class="border border-gray-200 rounded-lg h-72 sm:h-80 flex flex-col hover:bg-gray-100 cursor-pointer w-56 sm:w-64 flex-shrink-0 transition-all duration-300 shadow-sm hover:shadow-md"
+              class="border border-gray-200 rounded-lg h-72 sm:h-80 lg:h-96 2xl:h-[420px] flex flex-col hover:bg-gray-100 cursor-pointer w-56 sm:w-64 lg:w-72 2xl:w-full flex-shrink-0 transition-all duration-300 shadow-sm hover:shadow-md"
             >
               <img
-                class="rounded-t-lg w-full h-48 sm:h-56 object-cover"
+                class="rounded-t-lg w-full h-48 sm:h-56 lg:h-64 2xl:h-[280px] object-cover"
                 src="./img/Super Toch Photo.jpg"
                 alt="No Connection"
               />
               <div class="p-3 flex-1 flex flex-col justify-between">
-                <h1 class="font-thin text-sm sm:text-base text-right leading-6">
+                <h1
+                  class="font-thin text-sm sm:text-base lg:text-lg 2xl:text-xl text-right leading-6"
+                >
                   سرم نیاسینامید ضدلک
                 </h1>
                 <p
                   class="text-black font-bold flex flex-row-reverse items-center gap-1 justify-end mt-2"
                 >
-                  <span class="text-base sm:text-lg">۵۸۰,۰۰۰</span>
-                  <span class="text-sm sm:text-base">تومان</span>
+                  <span class="text-base sm:text-lg lg:text-xl 2xl:text-2xl"
+                    >۵۸۰,۰۰۰</span
+                  >
+                  <span class="text-sm sm:text-base lg:text-lg 2xl:text-xl"
+                    >تومان</span
+                  >
                 </p>
               </div>
             </button>
 
             <button
-              class="border border-gray-200 rounded-lg h-72 sm:h-80 flex flex-col hover:bg-gray-100 cursor-pointer w-56 sm:w-64 flex-shrink-0 transition-all duration-300 shadow-sm hover:shadow-md"
+              class="border border-gray-200 rounded-lg h-72 sm:h-80 lg:h-96 2xl:h-[420px] flex flex-col hover:bg-gray-100 cursor-pointer w-56 sm:w-64 lg:w-72 2xl:w-full flex-shrink-0 transition-all duration-300 shadow-sm hover:shadow-md"
             >
               <img
-                class="rounded-t-lg w-full h-48 sm:h-56 object-cover"
+                class="rounded-t-lg w-full h-48 sm:h-56 lg:h-64 2xl:h-[280px] object-cover"
                 src="./img/Beladona Photo.jpg"
                 alt="No Connection"
               />
               <div class="p-3 flex-1 flex flex-col justify-between">
-                <h1 class="font-thin text-sm sm:text-base text-right leading-6">
+                <h1
+                  class="font-thin text-sm sm:text-base lg:text-lg 2xl:text-xl text-right leading-6"
+                >
                   سرم آزلائیک اسید
                 </h1>
                 <p
                   class="text-black font-bold flex flex-row-reverse items-center gap-1 justify-end mt-2"
                 >
-                  <span class="text-base sm:text-lg">۷۲۰,۰۰۰</span>
-                  <span class="text-sm sm:text-base">تومان</span>
+                  <span class="text-base sm:text-lg lg:text-xl 2xl:text-2xl"
+                    >۷۲۰,۰۰۰</span
+                  >
+                  <span class="text-sm sm:text-base lg:text-lg 2xl:text-xl"
+                    >تومان</span
+                  >
                 </p>
               </div>
             </button>
 
             <button
-              class="border border-gray-200 rounded-lg h-72 sm:h-80 flex flex-col hover:bg-gray-100 cursor-pointer w-56 sm:w-64 flex-shrink-0 transition-all duration-300 shadow-sm hover:shadow-md"
+              class="border border-gray-200 rounded-lg h-72 sm:h-80 lg:h-96 2xl:h-[420px] flex flex-col hover:bg-gray-100 cursor-pointer w-56 sm:w-64 lg:w-72 2xl:w-full flex-shrink-0 transition-all duration-300 shadow-sm hover:shadow-md"
             >
               <img
-                class="rounded-t-lg w-full h-48 sm:h-56 object-cover"
+                class="rounded-t-lg w-full h-48 sm:h-56 lg:h-64 2xl:h-[280px] object-cover"
                 src="./img/Lido Photo.jpg"
                 alt="No Connection"
               />
               <div class="p-3 flex-1 flex flex-col justify-between">
-                <h1 class="font-thin text-sm sm:text-base text-right leading-6">
+                <h1
+                  class="font-thin text-sm sm:text-base lg:text-lg 2xl:text-xl text-right leading-6"
+                >
                   سرم یکنواخت کننده
                 </h1>
                 <p
                   class="text-black font-bold flex flex-row-reverse items-center gap-1 justify-end mt-2"
                 >
-                  <span class="text-base sm:text-lg">۶۵۰,۰۰۰</span>
-                  <span class="text-sm sm:text-base">تومان</span>
+                  <span class="text-base sm:text-lg lg:text-xl 2xl:text-2xl"
+                    >۶۵۰,۰۰۰</span
+                  >
+                  <span class="text-sm sm:text-base lg:text-lg 2xl:text-xl"
+                    >تومان</span
+                  >
                 </p>
               </div>
             </button>
@@ -756,106 +931,162 @@
         </div>
       </div>
     </section>
-    <footer class="w-full">
-      <div
-        class="bg-black h-auto md:h-120 w-full mt-20 text-white text-right flex flex-wrap justify-between md:justify-end relative px-4 md:px-0"
-      >
-        <ul class="w-1/2 md:w-auto md:mr-20 pt-8 md:pt-15 space-y-3">
-          <h4 class="font-bold mb-5 text-sm md:text-base">خدمات مشتریان</h4>
-          <li>
-            <a class="hover:text-pink-400 text-xs md:text-base" href="#"
-              >پرسش های متداول</a
-            >
-          </li>
-          <li>
-            <a class="hover:text-pink-400 text-xs md:text-base" href="#"
-              >راهنمای خرید و پرداخت</a
-            >
-          </li>
-          <li>
-            <a class="hover:text-pink-400 text-xs md:text-base" href="#"
-              >رویه های ارسال</a
-            >
-          </li>
-          <li>
-            <a class="hover:text-pink-400 text-xs md:text-base" href="#"
-              >شرایط مرجوعی</a
-            >
-          </li>
-          <li>
-            <a class="hover:text-pink-400 text-xs md:text-base" href="#"
-              >خرید کالای شانس</a
-            >
-          </li>
-          <li>
-            <a class="hover:text-pink-400 text-xs md:text-base" href="#"
-              >ارتباط با پشتیبانی</a
-            >
-          </li>
-        </ul>
-        <ul class="w-1/2 md:w-auto md:mr-20 pt-8 md:pt-15 space-y-3">
-          <h4 class="font-bold mb-5 text-sm md:text-base">شرکت خانومی</h4>
-          <li>
-            <a class="hover:text-pink-400 text-xs md:text-base" href="#"
-              >تماس با ما</a
-            >
-          </li>
-          <li>
-            <a class="hover:text-pink-400 text-xs md:text-base" href="#"
-              >درباره ما</a
-            >
-          </li>
-          <li>
-            <a class="hover:text-pink-400 text-xs md:text-base" href="#"
-              >فرصت‌های شغلی</a
-            >
-          </li>
-          <li>
-            <a class="hover:text-pink-400 text-xs md:text-base" href="#"
-              >حریم خصوصی</a
-            >
-          </li>
-          <li>
-            <a class="hover:text-pink-400 text-xs md:text-base" href="#"
-              >مجله خانومی</a
-            >
-          </li>
-          <li>
-            <a class="hover:text-pink-400 text-xs md:text-base" href="#"
-              >خانومی بیزینس</a
-            >
-          </li>
-          <li>
-            <a class="hover:text-pink-400 text-xs md:text-base" href="#"
-              >خانومی TV</a
-            >
-          </li>
-        </ul>
-        <div
-          class="text-gray-300 text-center md:absolute bottom-0 justify-center flex py-4 md:pb-4 w-full font-thin mt-4 md:mt-0"
-        >
-          <p class="text-sm md:text-base">
-            .کلیه حقوق این سایت متعلق به فروشگاه آنلاین خانومی می باشد
+
+    <!-- فوتر -->
+    <footer class="w-full mt-20">
+      <div class="bg-black text-white">
+        <div class="px-4 sm:px-6 md:px-12 lg:px-24 py-8 md:py-16">
+          <div class="grid grid-cols-2 gap-1 sm:gap-2 md:gap-3">
+            <div class="text-right">
+              <h4 class="font-bold text-base sm:text-lg mb-4 sm:mb-6">
+                خدمات مشتریان
+              </h4>
+              <ul class="space-y-1 sm:space-y-2 text-gray-300">
+                <li>
+                  <a
+                    href="#"
+                    class="hover:text-pink-400 transition duration-200 block py-1 text-xs sm:text-sm"
+                  >
+                    پرسش های متداول
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="hover:text-pink-400 transition duration-200 block py-1 text-xs sm:text-sm"
+                  >
+                    راهنمای خرید و پرداخت
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="hover:text-pink-400 transition duration-200 block py-1 text-xs sm:text-sm"
+                  >
+                    رویه های ارسال
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="hover:text-pink-400 transition duration-200 block py-1 text-xs sm:text-sm"
+                  >
+                    شرایط مرجوعی
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="hover:text-pink-400 transition duration-200 block py-1 text-xs sm:text-sm"
+                  >
+                    خرید کالای شانس
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="hover:text-pink-400 transition duration-200 block py-1 text-xs sm:text-sm"
+                  >
+                    ارتباط با پشتیبانی
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="text-right">
+              <h4 class="font-bold text-base sm:text-lg mb-4 sm:mb-6">
+                شرکت خانومی
+              </h4>
+              <ul class="space-y-1 sm:space-y-2 text-gray-300">
+                <li>
+                  <a
+                    href="#"
+                    class="hover:text-pink-400 transition duration-200 block py-1 text-xs sm:text-sm"
+                  >
+                    تماس با ما
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="hover:text-pink-400 transition duration-200 block py-1 text-xs sm:text-sm"
+                  >
+                    درباره ما
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="hover:text-pink-400 transition duration-200 block py-1 text-xs sm:text-sm"
+                  >
+                    فرصت‌های شغلی
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="hover:text-pink-400 transition duration-200 block py-1 text-xs sm:text-sm"
+                  >
+                    حریم خصوصی
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="hover:text-pink-400 transition duration-200 block py-1 text-xs sm:text-sm"
+                  >
+                    مجله خانومی
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="hover:text-pink-400 transition duration-200 block py-1 text-xs sm:text-sm"
+                  >
+                    خانومی بیزینس
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="hover:text-pink-400 transition duration-200 block py-1 text-xs sm:text-sm"
+                  >
+                    خانومی TV
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="text-center py-6 md:py-8">
+          <p class="text-gray-400 text-sm md:text-base">
+            کلیه حقوق این سایت متعلق به فروشگاه آنلاین خانومی می باشد.
           </p>
         </div>
       </div>
-      <div class="bg-white h-auto text-right w-full px-4 md:px-20 mt-10">
-        <h5 class="font-bold text-sm md:text-xl">
-          خرید لوازم آرایشی و بهداشتی از فروشگاه اینترنتی خانومی
-        </h5>
-        <p class="font-thin text-gray-500 pt-3 text-xs md:text-base">
-          فروشگاه لوازم آرایشی و بهداشتی خانومی با عرضه بهترین برندهای لوازم
-          آرایش، عطر و ادکلن اصل و تمامی لوازم بهداشتی و مراقبتی پوست و مو،
-          امکان خرید اینترنتی امن را برای شما فراهم کرده است. شما در خانومی به
-          آسانی به مجموعه کاملی از برندهای آرایشی و بهداشتی دسترسی خواهید داشت؛
-          چون فروشگاه اینترنتی خانومی، نمایندگی رسمی تمامی برندهای آرایشی و
-          بهداشتی است.
-        </p>
-        <h6
-          class="text-left mt-6 md:mt-10 text-pink-500 cursor-pointer text-sm md:text-base"
-        >
-          &lt; مشاهده بیشتر
-        </h6>
+      <div class="bg-gray-50 py-8 md:py-12">
+        <div class="px-4 sm:px-6 md:px-12 lg:px-24">
+          <h5
+            class="font-bold text-gray-800 text-lg md:text-xl mb-4 text-right"
+          >
+            خرید لوازم آرایشی و بهداشتی از فروشگاه اینترنتی خانومی
+          </h5>
+          <p
+            class="text-gray-600 leading-relaxed text-sm md:text-base mb-6 text-right"
+          >
+            فروشگاه لوازم آرایشی و بهداشتی خانومی با عرضه بهترین برندهای لوازم
+            آرایش، عطر و ادکلن اصل و تمامی لوازم بهداشتی و مراقبتی پوست و مو،
+            امکان خرید اینترنتی امن را برای شما فراهم کرده است.
+          </p>
+          <div class="text-right">
+            <a
+              href="#"
+              class="text-pink-500 font-semibold text-sm md:text-base hover:text-pink-600 transition duration-200 inline-flex items-center"
+            >
+              مشاهده بیشتر
+              <span class="mr-2">&gt;</span>
+            </a>
+          </div>
+        </div>
       </div>
     </footer>
   </body>
